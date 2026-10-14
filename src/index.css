@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surface and Canvas Tokens */
+  --color-surface: #f9f9ff;
+  --color-surface-dim: #c9dbff;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-variant: #d6e3ff;
+  --color-surface-tint: #1b59c1;
+
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f3ff;
+  --color-surface-container: #e8eeff;
+  --color-surface-container-high: #dfe8ff;
+  --color-surface-container-highest: #d6e3ff;
+
+  --color-on-surface: #001b3d;
+  --color-on-surface-variant: #424653;
+  --color-inverse-surface: #123059;
+  --color-inverse-on-surface: #ecf0ff;
+  --color-outline: #737784;
+  --color-outline-variant: #c3c6d5;
+
+  /* Primary Clinical Blue */
+  --color-primary: #0047a6;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #245fc7;
+  --color-on-primary-container: #d8e1ff;
+  --color-primary-fixed: #d9e2ff;
+  --color-primary-fixed-dim: #b0c6ff;
+  --color-on-primary-fixed: #001945;
+  --color-on-primary-fixed-variant: #00429b;
+  --color-inverse-primary: #b0c6ff;
+
+  /* AI Lavender / Secondary */
+  --color-secondary: #6352a2;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #baa7fe;
+  --color-on-secondary-container: #4a3886;
+  --color-secondary-fixed: #e7deff;
+  --color-secondary-fixed-dim: #ccbdff;
+  --color-on-secondary-fixed: #1f045b;
+  --color-on-secondary-fixed-variant: #4b3988;
+
+  /* Care Teal / Tertiary */
+  --color-tertiary: #00564a;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #007161;
+  --color-on-tertiary-container: #90f3dd;
+  --color-tertiary-fixed: #91f4de;
+  --color-tertiary-fixed-dim: #75d8c2;
+  --color-on-tertiary-fixed: #00201a;
+  --color-on-tertiary-fixed-variant: #005144;
+
+  /* Attention Amber */
+  --color-warning: #e8ae42;
+  --color-warning-container: #fff1cc;
+  --color-on-warning: #8f6317;
+
+  /* Alerts / Error Red */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Custom Spacing tokens matching DESIGN.md */
+  --spacing-space-xxs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-tablet: 1.5rem;
+  --spacing-margin-desktop: 2rem;
+  --spacing-gutter: 1.25rem;
+  --spacing-gutter-desktop: 1.5rem;
+  --spacing-260px: 260px;
+  --spacing-46px: 46px;
+  --spacing-130px: 130px;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+  }
+
+  /* Tabular lining figures for clinical metrics numbers */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}

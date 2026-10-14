@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-container-lowest": "#ffffff",
+        "tertiary-fixed-dim": "#75d8c2",
+        "on-secondary-container": "#4a3886",
+        "surface-tint": "#1b59c1",
+        "inverse-surface": "#123059",
+        "surface": "#f9f9ff",
+        "on-primary-container": "#d8e1ff",
+        "primary-fixed-dim": "#b0c6ff",
+        "tertiary-container": "#007161",
+        "error-container": "#ffdad6",
+        "on-background": "#001b3d",
+        "on-tertiary": "#ffffff",
+        "surface-bright": "#f9f9ff",
+        "on-secondary-fixed-variant": "#4b3988",
+        "inverse-on-surface": "#ecf0ff",
+        "outline": "#737784",
+        "tertiary-fixed": "#91f4de",
+        "on-tertiary-fixed-variant": "#005144",
+        "on-tertiary-container": "#90f3dd",
+        "secondary-fixed-dim": "#ccbdff",
+        "secondary-container": "#baa7fe",
+        "on-primary-fixed": "#001945",
+        "on-secondary": "#ffffff",
+        "inverse-primary": "#b0c6ff",
+        "background": "#f9f9ff",
+        "on-tertiary-fixed": "#00201a",
+        "surface-container": "#e8eeff",
+        "tertiary": "#00564a",
+        "secondary": "#6352a2",
+        "error": "#ba1a1a",
+        "surface-container-low": "#f0f3ff",
+        "on-surface": "#001b3d",
+        "surface-dim": "#c9dbff",
+        "on-primary-fixed-variant": "#00429b",
+        "surface-container-high": "#dfe8ff",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#d9e2ff",
+        "surface-container-highest": "#d6e3ff",
+        "on-error-container": "#93000a",
+        "on-surface-variant": "#424653",
+        "on-secondary-fixed": "#1f045b",
+        "secondary-fixed": "#e7deff",
+        "primary": "#0047a6",
+        "primary-container": "#245fc7",
+        "outline-variant": "#c3c6d5",
+        "surface-variant": "#d6e3ff",
+        "on-error": "#ffffff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-md": "1rem",
+        "space-lg": "1.5rem",
+        "space-xl": "2rem",
+        "gutter-desktop": "1.5rem",
+        "margin": "1rem",
+        "gutter": "1.25rem",
+        "space-sm": "0.75rem",
+        "space-2xl": "3rem",
+        "space-xxs": "0.25rem",
+        "margin-desktop": "2rem",
+        "space-xs": "0.5rem",
+        "margin-tablet": "1.5rem"
+      },
+      "fontFamily": {
+        "body-sm": ["Inter"],
+        "display-lg-mobile": ["Plus Jakarta Sans"],
+        "headline-md": ["Plus Jakarta Sans"],
+        "headline-lg": ["Plus Jakarta Sans"],
+        "display-lg": ["Plus Jakarta Sans"],
+        "body-lg": ["Inter"],
+        "headline-xl": ["Plus Jakarta Sans"],
+        "label-caps": ["Inter"],
+        "label-lg": ["Inter"],
+        "body-md": ["Inter"],
+        "vital-metric-sm": ["Plus Jakarta Sans"],
+        "label-md": ["Inter"],
+        "headline-xl-mobile": ["Plus Jakarta Sans"],
+        "vital-metric-lg": ["Plus Jakarta Sans"]
+      },
+      "fontSize": {
+        "body-sm": ["0.875rem", {"lineHeight": "1.25rem", "fontWeight": "400"}],
+        "display-lg-mobile": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "headline-md": ["1.25rem", {"lineHeight": "1.75rem", "fontWeight": "600"}],
+        "headline-lg": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "display-lg": ["3.5rem", {"lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "body-lg": ["1.125rem", {"lineHeight": "1.75rem", "fontWeight": "400"}],
+        "headline-xl": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "label-caps": ["0.6875rem", {"lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700"}],
+        "label-lg": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600"}],
+        "body-md": ["1rem", {"lineHeight": "1.5rem", "fontWeight": "400"}],
+        "vital-metric-sm": ["1.75rem", {"lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "label-md": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "headline-xl-mobile": ["1.75rem", {"lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "vital-metric-lg": ["2.75rem", {"lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-space-md pt-space-md pb-space-sm"><div class="flex items-center gap-space-xs"><img alt="SIM.AI Incubator Monitor Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPu0UluRKhPIT2XiBHWagzoupynFZJ_omjrOWXqTIu9Xh3JxrRf0D__M7HznZYgKIrLBcyv5WGYm3MJkkTx0uxM8iPO4IGuKv7X-VQ6vFTt3yxGsdkO3xDnhwZefjswtLXeopxDqn7rFDa52dpAEwGCbcJwmN08IxZuIsByBy-NDUS4SH-pCVUcexj7o0mGtHRX1uyXvka-FjmILGNjNJPvZLS-DpaCR-D0AOhIMAmuDnGHpJTd9ubiA"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">SIM.AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mt-0.5">NICU Telemetry</span></div></div><p class="font-label-md text-label-md text-on-surface-variant mt-space-xs leading-tight">Smarter Monitoring. Healthier Tomorrows.</p></div><div class="px-space-md pb-space-sm"><div class="bg-surface-container-low rounded-xl p-space-xs flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface-variant truncate">St. Jude Children's</span><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-tertiary-container/15 text-tertiary-container font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>Connected</span></div><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">NICU Pod 4 • Station Alpha</span></div></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span>Dashboard</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="live-monitoring" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">videocam</span><span>Live Monitoring</span></div><span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="children" href="#"><span class="material-symbols-outlined text-[20px]">child_care</span><span>Children</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="alerts" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">notifications_active</span><span>Alerts</span></div><span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-bold">3</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="rooms-and-beds" href="#"><span class="material-symbols-outlined text-[20px]">single_bed</span><span>Rooms &amp; Beds</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="medications" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span>Medications</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">clinical_notes</span><span>Reports</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-sm"><div class="bg-surface-container-low rounded-xl p-space-xs flex flex-col gap-space-xxs"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Shift Active</span></div><button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg transition-colors" title="Quick Lock Console" type="button"><span class="material-symbols-outlined text-[16px]">lock</span></button></div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug truncate">Dr. Sarah Jenkins</span><span class="font-label-md text-label-md text-on-surface-variant leading-none">NNP • 07:00 – 19:00</span></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px]">home_health</span><span class="font-semibold text-on-surface">Pod 4 Telemetry</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant font-medium truncate">Live Overview</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-10 pl-9 pr-14 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search infant by MRN, bed, mother's name, or alert..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container-highest font-label-caps text-label-caps text-on-surface-variant">⌘K</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-medium"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span>All 8 Incubators Synced</span></div><button class="flex items-center gap-1.5 bg-primary-container hover:bg-primary text-on-primary px-space-sm py-2 rounded-xl font-label-lg text-label-lg font-semibold transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>Register Newborn</span></button><button class="relative p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-2 pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0kWP5zF77ShnguiPUaaiMTqdiOB8lt5U2M4o6e2ctkxDzJh7wY-oBoRLqjzcXcXDrdkZ0P5YUAkGqTU8d_4asEcTqo0YiqAegQzLgtaMiV2FOaF5MMeAdt6C-FMdlS6oM64Dw2JCj9aclvZdZN_h69gJIgiRK1Xv0xQcpILvVcjBiSXcsJBGHNuvsXZvOJZtrUUMvdUQqrF-4jtq9qfBvHpVTWrLRM584ayERA1Jf5OpU1qUOBpldLw"/><div class="hidden md:flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Dr. Sarah Jenkins</span><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface-variant leading-none">NICU Lead Nurse</span><span class="px-1 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-caps text-label-caps leading-none font-bold">St. Jude</span></div></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Bar / Breadcrumb Context -->
+<div class="px-margin-desktop pt-space-lg pb-space-xs flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<span>Ward Management</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Beds &amp; Hardware Allocation</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight mt-0.5">Rooms &amp; Incubator Allocation</h1>
+</div>
+<!-- Quick Stats Pill Carousel -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-2 px-space-sm py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>0 Rooms Active</span>
+</div>
+<div class="flex items-center gap-2 px-space-sm py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>0 Bays Synced</span>
+</div>
+<button class="flex items-center gap-1.5 bg-primary hover:bg-primary-container text-on-primary px-space-sm py-2 rounded-xl font-label-lg text-label-lg font-semibold transition-all shadow-sm cursor-pointer" onclick="document.getElementById('modal-incubator').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Create Room or Pod</span>
+</button>
+</div>
+</div>
+<!-- Background Content: Clean Clinical Empty State Layout -->
+<div class="px-margin-desktop py-space-md">
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-xl flex flex-col items-center text-center max-w-5xl mx-auto">
+<!-- Schematic NICU Blueprint Graphic -->
+<div class="relative w-full max-w-md h-56 flex items-center justify-center mb-space-lg">
+<!-- Ambient Backing Glow -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-fixed/30 via-secondary-fixed/20 to-tertiary-fixed/20 rounded-full blur-2xl -z-10 opacity-70"></div>
+<!-- Clean SVG Micro-Architectural Blueprint of an Incubator Bay -->
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 460 220" xmlns="http://www.w3.org/2000/svg">
+<!-- Room Boundary Grid Lines -->
+<rect fill="#F0F3FF" height="180" rx="16" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.35" stroke-width="1.5" width="420" x="20" y="20"></rect>
+<path d="M150 20V200M310 20V200" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.25" stroke-width="1.5"></path>
+<!-- Bay 01 (Ghost) -->
+<rect fill="#FFFFFF" fill-opacity="0.7" height="140" rx="12" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.2" width="98" x="36" y="40"></rect>
+<circle cx="85" cy="80" r="24" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.25" stroke-width="1.2"></circle>
+<text fill="#737784" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0.05em" text-anchor="middle" x="85" y="145">BAY A-01</text>
+<!-- Bay 02 Center (Highlighted Deployment Target) -->
+<rect fill="#FFFFFF" height="156" rx="14" stroke="#0047A6" stroke-opacity="0.8" stroke-width="2" width="128" x="166" y="32"></rect>
+<!-- Incubator Dome Silhouette -->
+<path d="M190 98C190 74 210 60 230 60C250 60 270 74 270 98H190Z" fill="#D9E2FF" stroke="#0047A6" stroke-width="1.5"></path>
+<!-- Mattress & Sensor Pad -->
+<rect fill="#245FC7" height="10" rx="3" width="72" x="194" y="100"></rect>
+<path d="M200 105H260" stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5"></path>
+<!-- AI Sensor Reticle Beam -->
+<circle cx="230" cy="82" fill="#6352A2" r="3"></circle>
+<path d="M230 42L230 52M220 46L240 46" stroke="#6352A2" stroke-linecap="round" stroke-width="1.5"></path>
+<!-- Status Tag -->
+<rect fill="#E8EEFF" height="18" rx="9" width="84" x="188" y="122"></rect>
+<text fill="#0047A6" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="230" y="134">READY TO BIND</text>
+<text fill="#424653" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" text-anchor="middle" x="230" y="165">STATION ALPHA</text>
+<!-- Bay 03 (Ghost) -->
+<rect fill="#FFFFFF" fill-opacity="0.7" height="140" rx="12" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.2" width="98" x="326" y="40"></rect>
+<circle cx="375" cy="80" r="24" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.25" stroke-width="1.2"></circle>
+<text fill="#737784" font-family="Inter" font-size="10" font-weight="600" letter-spacing="0.05em" text-anchor="middle" x="375" y="145">BAY A-02</text>
+</svg>
+</div>
+<!-- Main Explanation -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md mb-space-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">domain_add</span>
+        NICU Setup Wizard
+      </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight max-w-xl">
+        No Rooms or Incubator Bays Configured Yet
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-space-xs leading-relaxed">
+        Before admitting neonates and streaming contactless computer-vision telemetry, set up your NICU rooms, designate bed numbers, and bind physical incubator serial numbers with overhead optical units.
+      </p>
+<!-- Primary Action -->
+<div class="mt-space-lg flex items-center gap-space-sm flex-wrap justify-center">
+<button class="flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary px-space-lg py-3 rounded-xl font-label-lg text-label-lg font-semibold transition-all shadow-md hover:shadow cursor-pointer" onclick="document.getElementById('modal-incubator').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Create First Room or Pod</span>
+</button>
+<button class="flex items-center gap-2 bg-surface-container-low hover:bg-surface-container text-on-surface px-space-lg py-3 rounded-xl font-label-lg text-label-lg font-semibold transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+<span>Import Ward Layout (HL7 / FHIR)</span>
+</button>
+</div>
+<!-- Onboarding Guidance Step Sequence -->
+<div class="w-full mt-space-2xl pt-space-xl bg-surface-container-low/60 rounded-xl p-space-lg">
+<div class="text-left mb-space-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Configuration Workflow</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-0.5">Three Steps to Continuous Contactless Telemetry</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md text-left">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-lg bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">1</span>
+<span class="material-symbols-outlined text-primary text-[20px]">meeting_room</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mt-2">Create Room / Ward</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Designate the physical clinical quadrant, acoustic envelope, and ambient environmental baselines.</p>
+</div>
+<div class="mt-4 pt-2 flex items-center gap-1.5 text-primary font-label-md text-label-md font-semibold">
+<span>Ready to configure</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-md text-label-md font-bold">2</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">single_bed</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mt-2">Add Incubators &amp; Hardware</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bind Dräger or GE warming pods, register asset serial tags, and set gestational care capacities.</p>
+</div>
+<div class="mt-4 pt-2 flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span>Awaiting Step 1</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-label-md text-label-md font-bold">3</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">videocam</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mt-2">Pair 940nm AI Vision</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Auto-detect hospital VLAN camera feeds for zero-contact respiration and micro-movement monitoring.</p>
+</div>
+<div class="mt-4 pt-2 flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span>Awaiting hardware</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- OVERLAID / FOREGROUND MODAL: Add New Incubator & Bed Assignment -->
+<!-- Controlled via plain JS or click-to-close for demonstration -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-space-sm md:p-space-lg bg-on-surface/40 backdrop-blur-sm transition-opacity" id="modal-incubator">
+<div class="bg-surface-container-lowest w-full max-w-4xl max-h-[942px] rounded-2xl shadow-xl flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps font-bold uppercase">
+<span class="material-symbols-outlined text-[14px]">sensors</span> Hardware Binding
+            </span>
+<span class="text-outline-variant font-label-caps text-label-caps">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Step 1 of 2: Hardware &amp; Location Details</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold leading-tight">Add Incubator to Clinical Unit</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Bind physical neonatal hardware, room allocation, and telemetry camera feed.</p>
+</div>
+<button aria-label="Close dialog" class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer" onclick="document.getElementById('modal-incubator').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Scrollable Form Fields) -->
+<div class="p-space-lg overflow-y-auto flex-1 flex flex-col gap-space-lg">
+<!-- SECTION 1: Location & Hardware Assignment -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-primary/10 text-primary flex items-center justify-center font-label-md text-label-md font-bold">1</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Ward Allocation &amp; Bay Identifier</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Physical Room Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>Physical Room / Ward <span class="text-error font-bold">*</span></span>
+<span class="text-primary font-label-md text-label-md cursor-pointer hover:underline">+ New Room</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none appearance-none cursor-pointer">
+<option selected="">NICU Pod 4 — Station Alpha (Intensive Care)</option>
+<option>NICU Pod 3 — Step-Down Transitional</option>
+<option>NICU Pod 2 — Special Care Nursery</option>
+<option>Isolation Pod 1B — Negative Pressure</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Allocates environmental sensor bounds for this physical area.</span>
+</div>
+<!-- Bed Bay Identifier -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+                Bed Bay Identifier <span class="text-error font-bold">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none placeholder:text-on-surface-variant/50" placeholder="e.g. Bed 4K or Bay 08" type="text" value="Bed 4K"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline-variant text-[18px]">bed</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Physical label tagged at patient bedside console.</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Incubator Hardware Profile -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-primary/10 text-primary flex items-center justify-center font-label-md text-label-md font-bold">2</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Incubator Hardware Profile</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Manufacturer & Model -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+                Incubator Manufacturer &amp; Model <span class="text-error font-bold">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 px-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none appearance-none cursor-pointer">
+<option selected="">Dräger Isolette 8000 Plus</option>
+<option>GE Healthcare Giraffe OmniBed Carestation</option>
+<option>Atom Medical Dual Incu i</option>
+<option>Natus Medical Olympic WarmCloud</option>
+<option>Other / Generic Closed Warming System</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Preloads serial telemetry protocol and servo communication hooks.</span>
+</div>
+<!-- Serial Number & Asset Tag -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+                Hardware Serial Number / Asset Tag <span class="text-error font-bold">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 pl-3.5 pr-11 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:outline-none font-mono" placeholder="e.g. SN-ISO-2025-XXXX" type="text" value="SN-ISO-2025-88392"/>
+<button class="absolute right-2 p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Scan Barcode via Cart Scanner" type="button">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</button>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Verified against biomedical engineering inventory catalog.</span>
+</div>
+</div>
+<!-- Gestational Capability (Pill Selector) -->
+<div class="flex flex-col gap-1.5 mt-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+              Max Gestational Capability Level <span class="text-error font-bold">*</span>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-primary-fixed/30 text-on-primary-fixed cursor-pointer transition-all">
+<input checked="" class="text-primary focus:ring-primary h-4 w-4" name="gestational_tier" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold leading-tight">Extreme Preterm</span>
+<span class="font-label-md text-label-md text-on-surface-variant">&lt;28 weeks (High Humidity)</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface cursor-pointer transition-all">
+<input class="text-primary focus:ring-primary h-4 w-4" name="gestational_tier" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold leading-tight">Very Preterm</span>
+<span class="font-label-md text-label-md text-on-surface-variant">28–32 weeks (Moderate)</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface cursor-pointer transition-all">
+<input class="text-primary focus:ring-primary h-4 w-4" name="gestational_tier" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold leading-tight">Full Term</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Transitional &amp; Observation</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Contactless AI Vision Camera Feed Pairing -->
+<!-- Lavendar/AI Assistive Container -->
+<div class="bg-secondary-fixed/20 p-space-md rounded-2xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">videocam</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Contactless Telemetry Camera Pairing</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Overhead SIM.AI Optical Sensor Array</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-wider font-bold">
+              AI Vision Engine
+            </span>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between">
+<span>RTSP / ONVIF IP Stream Stream URL <span class="text-error font-bold">*</span></span>
+<span class="text-secondary font-label-md text-label-md font-semibold">Subnet: VLAN-10-NICU</span>
+</label>
+<div class="flex flex-col sm:flex-row gap-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">router</span>
+<input class="w-full h-11 pl-9 pr-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:ring-2 focus:ring-secondary focus:outline-none font-mono text-xs" type="text" value="rtsp://admin:••••••••@10.240.14.82:554/live/ch0"/>
+</div>
+<button class="px-4 h-11 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-secondary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer shrink-0 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">wifi_find</span>
+<span>Auto-Detect on VLAN</span>
+</button>
+</div>
+</div>
+<!-- Non-visible 940nm Checkbox Certification -->
+<div class="flex items-start gap-2.5 pt-1">
+<input checked="" class="mt-0.5 rounded text-secondary focus:ring-secondary h-4 w-4 cursor-pointer" id="ir-check" type="checkbox"/>
+<label class="flex flex-col cursor-pointer" for="ir-check">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+                940nm Non-Visible IR Lighting Certified
+                <span class="material-symbols-outlined text-tertiary-container text-[16px]">verified</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Guarantees zero retinal disruption to developing neonatal circadian rhythms and phototherapy isolation.</span>
+</label>
+</div>
+</div>
+<!-- SECTION 4: Default Climate & Acoustic Presets -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-primary/10 text-primary flex items-center justify-center font-label-md text-label-md font-bold">3</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Default Climate &amp; Alarm Thresholds</span>
+</div>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> AAP Guidelines Applied
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Servo Temp -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">device_thermostat</span>
+                  Target Servo Temp
+                </span>
+<span class="font-bold text-on-surface">°C</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<input class="font-vital-metric-sm text-vital-metric-sm text-on-surface bg-surface-container-lowest rounded-lg px-2 py-1 w-24 font-bold focus:outline-none focus:ring-2 focus:ring-primary" step="0.1" type="number" value="36.8"/>
+<span class="font-label-md text-label-md text-on-surface-variant">±0.2° tolerance</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1">Skin-probe feedback servo</span>
+</div>
+<!-- Humidity -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">humidity_high</span>
+                  Target Humidity
+                </span>
+<span class="font-bold text-on-surface">%</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<input class="font-vital-metric-sm text-vital-metric-sm text-on-surface bg-surface-container-lowest rounded-lg px-2 py-1 w-24 font-bold focus:outline-none focus:ring-2 focus:ring-tertiary-container" step="1" type="number" value="70"/>
+<span class="font-label-md text-label-md text-on-surface-variant">RH</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1">Transepidermal water protection</span>
+</div>
+<!-- Acoustic Alarm -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">volume_up</span>
+                  Acoustic Limit
+                </span>
+<span class="font-bold text-on-surface">dB</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<input class="font-vital-metric-sm text-vital-metric-sm text-on-surface bg-surface-container-lowest rounded-lg px-2 py-1 w-24 font-bold focus:outline-none focus:ring-2 focus:ring-error" step="1" type="number" value="45"/>
+<span class="font-label-md text-label-md text-on-surface-variant">AAP Max</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-1">Neurodevelopmental noise guard</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between gap-space-sm flex-wrap">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold transition-colors cursor-pointer" onclick="document.getElementById('modal-incubator').classList.add('hidden')" type="button">
+          Cancel
+        </button>
+<div class="flex items-center gap-space-sm">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-primary font-label-lg text-label-lg font-semibold transition-colors cursor-pointer hidden sm:inline-flex" type="button">
+            Save &amp; Pair Another Incubator
+          </button>
+<button class="flex items-center gap-2 px-space-lg py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-semibold transition-all shadow-md cursor-pointer" onclick="document.getElementById('modal-incubator').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Complete &amp; Activate Bay</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple modal open/close accessibility and keyboard listener
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      const modal = document.getElementById('modal-incubator');
+      if (modal && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+      }
+    }
+  });
+</script></main></div></body></html>

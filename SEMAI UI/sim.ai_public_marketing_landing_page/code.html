@@ -1,0 +1,677 @@
+<!DOCTYPE html><html class="h-full" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>SIM.AI Incubator Monitor</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#c3c6d5", "tertiary-fixed-dim": "#75d8c2", "primary-fixed-dim": "#b0c6ff", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "inverse-surface": "#123059", "tertiary-fixed": "#91f4de", "surface": "#f9f9ff", "tertiary-container": "#007161", "inverse-on-surface": "#ecf0ff", "surface-tint": "#1b59c1", "on-error": "#ffffff", "surface-variant": "#d6e3ff", "primary-fixed": "#d9e2ff", "secondary-fixed": "#e7deff", "on-primary-fixed": "#001945", "on-tertiary-container": "#90f3dd", "primary-container": "#245fc7", "on-primary-fixed-variant": "#00429b", "inverse-primary": "#b0c6ff", "tertiary": "#00564a", "secondary-fixed-dim": "#ccbdff", "on-surface": "#001b3d", "secondary-container": "#baa7fe", "on-primary": "#ffffff", "surface-container-highest": "#d6e3ff", "surface-container-lowest": "#ffffff", "background": "#f9f9ff", "on-background": "#001b3d", "primary": "#0047a6", "error-container": "#ffdad6", "on-secondary-fixed": "#1f045b", "outline": "#737784", "secondary": "#6352a2", "surface-container": "#e8eeff", "on-secondary-container": "#4a3886", "on-surface-variant": "#424653", "on-secondary-fixed-variant": "#4b3988", "on-tertiary-fixed-variant": "#005144", "error": "#ba1a1a", "surface-container-high": "#dfe8ff", "on-tertiary-fixed": "#00201a", "surface-bright": "#f9f9ff", "surface-dim": "#c9dbff", "on-secondary": "#ffffff", "on-primary-container": "#d8e1ff", "surface-container-low": "#f0f3ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin": "1rem", "space-sm": "0.75rem", "margin-tablet": "1.5rem", "gutter": "1.25rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "space-xxs": "0.25rem", "margin-desktop": "2rem", "space-2xl": "3rem", "space-xl": "2rem", "gutter-desktop": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "vital-metric-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "vital-metric-sm": ["Plus Jakarta Sans"], "label-caps": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "vital-metric-lg": ["2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "vital-metric-sm": ["1.75rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-caps": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "display-lg": ["3.5rem", { "lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-full flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(23,52,93,0.04)]"><div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="flex items-center justify-center w-10 h-10 rounded-xl bg-primary-container text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">nest_cam_iq_outdoor</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">SIM<span class="text-primary">.AI</span> <span class="font-body-md text-body-sm text-on-surface-variant font-normal">Incubator Monitor</span></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mt-0.5 hidden sm:inline-block">Smarter Monitoring. Healthier Tomorrows.</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="landing" href="#">Features</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="technology-ai" href="#">Technology &amp; AI</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">Safety &amp; Privacy</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-all" data-path="sign-in" href="#">Sign In</a><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-all" data-path="schedule-nicu-demo" href="#">Sign Up<br></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xxs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface pb-space-2xl">
+<!-- Ambient Clinical Lighting Glows -->
+<div class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[900px] h-[450px] bg-primary/5 rounded-full blur-3xl"></div>
+<div class="pointer-events-none absolute top-48 right-[-10%] w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="pointer-events-none absolute top-72 left-[-8%] w-[420px] h-[420px] bg-tertiary-fixed-dim/20 rounded-full blur-3xl"></div>
+<div class="relative w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg md:pt-space-xl">
+<!-- Clinical Badge & Header Overline -->
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-surface-container text-primary shadow-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Clinical AI v3.4 Cleared Architecture</span>
+<span class="text-outline-variant font-body-sm">•</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Level II–IV NICU Deployed</span>
+</div>
+<h1 class="font-display-lg text-headline-xl md:text-display-lg text-on-surface tracking-tight leading-tight md:leading-[1.1] mb-space-md">
+          Continuous Computer-Vision &amp; Non-Invasive AI Telemetry for <span class="text-primary-container">Modern NICUs</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mb-space-xl">
+          Protecting the most fragile lives. Zero-contact respiratory rate estimation, real-time micro-apnea detection, and closed-loop incubator microclimate tracking designed for neonatal intensive care teams.
+        </p>
+<!-- CTA Cluster -->
+
+<!-- Trust Badges Strip -->
+
+</div>
+<!-- Integrated Hero Image & Live Telemetry HUD -->
+<div class="relative w-full max-w-6xl mx-auto rounded-3xl overflow-hidden bg-surface-container-lowest shadow-xl p-space-xs md:p-space-sm">
+<div class="relative rounded-2xl overflow-hidden aspect-[16/9] w-full bg-surface-dim">
+<img alt="SIM.AI smart incubator monitor in advanced NICU" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWQlY20MGYqMNKMf6OAy5ATn6u_6Yt4gFyBY7LSlgdtxf1nUB-mgSBpEc76OgmK4H7kaUWgsxvvEdp_RIhm6pcVojDWWUs_liDSTlKB5g0g9jsEGwBD5LMrq4KC6UV5PUpMumYGREWllMQbDRw0XG4W4j8BHaRrKjLNNOG8OfqWxAed1QdF0LWQnfgoa9z_UFj4b54OhrWK7_VEpCats3sk9n8IHHvOw0Idm-m61cHym89ZSKtqS-E3Q">
+<!-- Top HUD Overlay Bar -->
+<div class="absolute top-0 left-0 right-0 p-space-md flex flex-wrap items-center justify-between gap-space-xs bg-gradient-to-b from-inverse-surface/80 via-inverse-surface/40 to-transparent text-inverse-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-inverse-surface/70 backdrop-blur-md">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-inverse-on-surface font-semibold">BED 04 • POD B (NICU-EAST)</span>
+</div>
+<span class="font-label-md text-label-md text-inverse-on-surface/80 hidden sm:inline-block">MRN: #892-441-A</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="px-2.5 py-1 rounded-lg bg-surface-container-lowest/20 backdrop-blur-md text-inverse-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">videocam</span>
+<span>940nm Passive IR</span>
+</div>
+<div class="px-2.5 py-1 rounded-lg bg-tertiary-container/80 backdrop-blur-md text-on-primary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Stable Waveforms</span>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Telemetry Pods -->
+<div class="absolute bottom-0 left-0 right-0 p-space-md md:p-space-lg bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/60 to-transparent">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Metric 1: Heart Rate -->
+<div class="rounded-xl bg-surface-container-lowest/90 backdrop-blur-md p-space-sm shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Heart Rate</span>
+<span class="material-symbols-outlined text-[16px] text-primary">ecg_heart</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-vital-metric-lg text-vital-metric-sm md:text-vital-metric-lg text-on-surface">148</span>
+<span class="font-label-md text-label-md text-on-surface-variant">bpm</span>
+</div>
+<div class="w-full h-5 mt-1 flex items-end gap-0.5">
+<span class="w-1.5 h-2 bg-primary/40 rounded-full"></span>
+<span class="w-1.5 h-3 bg-primary/60 rounded-full"></span>
+<span class="w-1.5 h-5 bg-primary rounded-full"></span>
+<span class="w-1.5 h-2 bg-primary/50 rounded-full"></span>
+<span class="w-1.5 h-4 bg-primary rounded-full"></span>
+<span class="w-1.5 h-3 bg-primary/60 rounded-full"></span>
+<span class="w-1.5 h-5 bg-primary rounded-full"></span>
+<span class="w-1.5 h-2 bg-primary/40 rounded-full"></span>
+</div>
+</div>
+<!-- Metric 2: SpO2 -->
+<div class="rounded-xl bg-surface-container-lowest/90 backdrop-blur-md p-space-sm shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">SpO2 (Pulse-Ox)</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-vital-metric-lg text-vital-metric-sm md:text-vital-metric-lg text-tertiary">97</span>
+<span class="font-label-md text-label-md text-on-surface-variant">%</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Perfusion Index 2.8</span>
+</div>
+</div>
+<!-- Metric 3: Skin Temp -->
+<div class="rounded-xl bg-surface-container-lowest/90 backdrop-blur-md p-space-sm shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Skin Temp (IR)</span>
+<span class="material-symbols-outlined text-[16px] text-primary">device_thermostat</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-vital-metric-lg text-vital-metric-sm md:text-vital-metric-lg text-on-surface">36.8</span>
+<span class="font-label-md text-label-md text-on-surface-variant">°C</span>
+</div>
+<div class="text-on-surface-variant font-label-md text-label-md mt-1">
+                  Delta: +0.1°C / 4h (Isolette closed)
+                </div>
+</div>
+<!-- Metric 4: AI Pose & Respiratory Rate -->
+<div class="rounded-xl bg-surface-container-lowest/90 backdrop-blur-md p-space-sm shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">AI Posture / RR</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">psychology</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-vital-metric-lg text-vital-metric-sm md:text-vital-metric-lg text-secondary">42</span>
+<span class="font-label-md text-label-md text-on-surface-variant">br/min</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-container font-label-caps text-label-caps font-semibold">
+<span>Supine</span>
+<span>•</span>
+<span>99.2% Conf</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CLINICAL PROBLEM & STATS ROW -->
+<section class="w-full bg-surface-container-low py-space-2xl">
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Clinical Evidence &amp; Impact</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Designed for the Sensory Sanctuary of the NICU</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Standard NICU monitors produce up to 350 alarms per bed daily. SIM.AI applies deep convolutional temporal models to filter false alerts without missing true acute events.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat Card 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined">notifications_off</span>
+</div>
+<div>
+<div class="font-vital-metric-lg text-vital-metric-lg text-primary tracking-tight">40%</div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold mt-1">Reduction in Sensory Alarm Fatigue</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-site multi-center retrospective validation eliminating posture-artifact alarms.</p>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div>
+<div class="font-vital-metric-lg text-vital-metric-lg text-secondary tracking-tight">18ms</div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold mt-1">Hospital Edge TPU Inference Latency</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Near zero latency processing bed-side without cloud egress reliance.</p>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-tertiary mb-space-md">
+<span class="material-symbols-outlined">volunteer_activism</span>
+</div>
+<div>
+<div class="font-vital-metric-lg text-vital-metric-lg text-tertiary tracking-tight">0</div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold mt-1">Skin Disruptions in Kangaroo Care</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">No adhesive electrodes required for optical chest wall displacement tracking.</p>
+</div>
+</div>
+<!-- Stat Card 4 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<div class="font-vital-metric-lg text-vital-metric-lg text-primary-container tracking-tight">99.4%</div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold mt-1">Optical Respiratory Accuracy</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Benchmarked against transcutaneous impedance pneumography standard.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CORE FEATURE ARCHITECTURE GRID (BENTO STYLE) -->
+<section class="w-full bg-surface py-space-2xl">
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary font-bold">Technology Architecture</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Quad-Modality Neonatal Telemetry</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Engineered explicitly for premature neonates (23 to 37 weeks gestational age) where sensor adhesives pose medical adhesive-related skin injuries (MARSI).
+        </p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Bento 1: Live Video & AI Event Telemetry (7 Cols) -->
+<div class="md:col-span-7 rounded-3xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Modality 01
+              </span>
+<span class="font-label-md text-label-md text-on-surface-variant">RTSP / WebRTC Bedside</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">Live Video &amp; Multi-Bed AI Event Telemetry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-lg">
+              Synchronous ultra-low-latency video feeds integrated with skeletal keypoint regression. Tracks spontaneous infant movements, eye-opening sleep states, and limb twitching patterns without disturbing daylight-simulated photoperiods.
+            </p>
+</div>
+<!-- Interactive UI Mockup inside Bento 1 -->
+<div class="w-full rounded-2xl bg-surface-container-low p-space-md">
+<div class="flex items-center justify-between mb-space-sm pb-space-xs border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Active Bed Stream Matrix</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">4 Nodes Connected</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div class="rounded-xl bg-surface-container-lowest p-2 text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bed 01</span>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">142 <span class="text-xs font-normal">bpm</span></p>
+<span class="font-label-caps text-[10px] text-tertiary font-bold uppercase">Quiet Sleep</span>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-2 text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bed 02</span>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">155 <span class="text-xs font-normal">bpm</span></p>
+<span class="font-label-caps text-[10px] text-secondary font-bold uppercase">Active Movement</span>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-2 text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bed 03</span>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">139 <span class="text-xs font-normal">bpm</span></p>
+<span class="font-label-caps text-[10px] text-tertiary font-bold uppercase">Stable (Skin-to-Skin)</span>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-2 text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bed 04</span>
+<p class="font-headline-md text-headline-md text-on-surface font-bold">148 <span class="text-xs font-normal">bpm</span></p>
+<span class="font-label-caps text-[10px] text-tertiary font-bold uppercase">Quiet Sleep</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento 2: AI-Assisted Micro-Apnea Detection (5 Cols) -->
+<div class="md:col-span-5 rounded-3xl bg-secondary-fixed/30 p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                Modality 02
+              </span>
+<span class="font-label-md text-label-md text-on-secondary-container">Sub-Visual Dynamics</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">AI-Assisted Micro-Apnea Detection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+              Passive motion magnification algorithm amplifies 0.1mm micro-chest elevations. Differentiates true obstructive apnea from central shallow breathing, notifying attending nurses up to 14 seconds faster.
+            </p>
+</div>
+<!-- Waveform Representation -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-caps text-label-caps uppercase font-bold text-secondary">Optical Chest Wall Waveform</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Regular Excursion</span>
+</div>
+<svg class="w-full h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 400 60">
+<path class="text-secondary" d="M 0 30 Q 25 10 50 30 T 100 30 T 150 15 T 165 48 T 180 30 T 230 30 T 280 10 T 330 30 T 380 30 T 400 30" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-outline-variant/10 text-on-surface-variant">
+<span class="font-label-caps text-[11px]">APNEA WINDOW THRESHOLD: 15s</span>
+<span class="font-label-caps text-[11px] text-tertiary font-bold">0 EVENTS LOGGED (LAST 6H)</span>
+</div>
+</div>
+</div>
+<!-- Bento 3: Incubator Microclimate Closed-Loop (6 Cols) -->
+<div class="md:col-span-6 rounded-3xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                Modality 03
+              </span>
+<span class="font-label-md text-label-md text-on-surface-variant">AAP Acoustic &amp; Temp Guard</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">Incubator Microclimate Closed-Loop</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-lg">
+              Continuous environmental sensor suite cross-references warmer hood humidity, airflow turbulence, ambient illuminance, and acoustic sound pressure to safeguard sensory neural maturation.
+            </p>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="rounded-xl bg-surface-container-low p-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Acoustic SPL</span>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">41.2 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">dB</span></p>
+<span class="font-label-caps text-[10px] text-tertiary font-bold">&lt;45 dB Safe</span>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Isolette RH</span>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">72 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">%</span></p>
+<span class="font-label-caps text-[10px] text-primary font-bold">Target Range</span>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-sm">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Ambient Lux</span>
+<p class="font-headline-md text-headline-md text-on-surface mt-1">12 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">lx</span></p>
+<span class="font-label-caps text-[10px] text-secondary font-bold">Circadian Rest</span>
+</div>
+</div>
+</div>
+<!-- Bento 4: Intelligent Triage & EHR Sync (6 Cols) -->
+<div class="md:col-span-6 rounded-3xl bg-surface-container-lowest p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-surface"></span>
+                Modality 04
+              </span>
+<span class="font-label-md text-label-md text-on-surface-variant">Epic • Cerner • HL7 FHIR</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">Intelligent Triage &amp; Bi-Directional EHR Sync</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-lg">
+              Automated structured vital charts pushed directly to your hospital EHR flowsheets. Generates shift-handoff AI summaries that highlight trend anomalies, feeding desaturations, and kangaroo bond durations.
+            </p>
+</div>
+<div class="rounded-2xl bg-surface-container p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">FHIR Observation Bundles Active</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Every 60s discrete telemetry push to hospital EMR</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: HOW IT WORKS (4 STEPS) -->
+<section class="w-full bg-surface-container-low py-space-2xl">
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-3xl mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Implementation Blueprint</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Zero-Invasive Bedside Onboarding in 4 Steps</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Engineered to fit into fast-paced NICU nursing workflows without requiring hardware recalibration between patient shifts.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-md text-headline-md mb-space-md font-bold">
+              01
+            </div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Toolless Isolette Mounting</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Mount the medical-grade optical sensor pod to standard Draeger, GE Giraffe, or Atom incubators using universal quick-release clamps.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs border-t border-outline-variant/10 text-on-surface-variant font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span>ISO 13485 Bio-Compatible</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-md text-headline-md mb-space-md font-bold">
+              02
+            </div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Hospital VLAN &amp; MRN Match</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Scan infant barcoded hospital wristband with the nurse tablet. Instant bed assignment pairs directly to your isolated hospital VLAN.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs border-t border-outline-variant/10 text-on-surface-variant font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">wifi_protected_setup</span>
+<span>802.1X WPA3 Enterprise</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-md text-headline-md mb-space-md font-bold">
+              03
+            </div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Auto-Optical Calibration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              The on-device model maps chest coordinates within 4 seconds. Accounts for swaddling, phototherapy masks, and high-frequency oscillatory ventilators.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs border-t border-outline-variant/10 text-on-surface-variant font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+<span>Self-Correcting Field</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary font-headline-md text-headline-md mb-space-md font-bold">
+              04
+            </div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Synchronous Central Broadcast</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Waveforms stream simultaneously to bedside monitors, central nurses' stations, and encrypted clinician smartphones with priority alert tiered escalation.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-xs border-t border-outline-variant/10 text-on-surface-variant font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">cell_tower</span>
+<span>Multi-Screen Relay Active</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CAREGIVER COMPASSION & HEALTHCARE SETTING -->
+<section class="w-full bg-surface py-space-2xl">
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="rounded-3xl bg-surface-container p-space-md md:p-space-xl lg:p-space-2xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Image Column (6 cols) -->
+<div class="lg:col-span-6 rounded-2xl overflow-hidden shadow-md">
+<img alt="Pediatric nurse caring for premature baby in smart NICU incubator" class="w-full h-auto object-cover rounded-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqUwHK1a0vYDcZvUaC6dFd_zRw980FCbtczIvO-XUI4jiL5sEG1RdXRiuMX5OwW6DMSJFFLATv1EIdbHQ-7BBxv8BEDV-X262zV1zMSbevqaXUvfXZX7J3tLRmta4-YYCAIRmqsIrsApeqBxwQOqhm2Zl5N2zCpjYFaCcqDn2FMxKuQEN21BZYqWdb28o1zenusjGtDSanLsTYDp6UNWZSKnUxRvpDVh0vsH3GJev7lQlif0yeQ-aaFw">
+</div>
+<!-- Narrative Column (6 cols) -->
+<div class="lg:col-span-6 flex flex-col">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-container font-label-caps text-label-caps font-bold uppercase tracking-wider mb-space-sm w-fit">
+<span class="material-symbols-outlined text-[15px] text-secondary">favorite</span>
+              Human-Centered Care
+            </div>
+<h3 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-space-md">
+              Built Alongside Neonatologists &amp; Neonatal Nurse Practitioners
+            </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-md">
+              Premature babies have skin up to 80% thinner than full-term infants. Frequent repositioning of adhesive sensors causes painful epidermal striping and sleep fragmentation during vital neurological development windows.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-lg">
+              SIM.AI gives bedside nurses peace of mind by acting as a gentle, tireless guardian. It detects subtle shifts in chest respiration and skin perfusion continuously—enabling quiet, kangaroo-care skin-to-skin bonding without sensor tangle.
+            </p>
+<!-- Testimonial Quote -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-md shadow-sm">
+<p class="font-body-md text-body-md italic text-on-surface mb-space-xs">
+                “SIM.AI reduced our unit's false desaturation beeps by almost half. Our nurses spend less time responding to sensor disconnects and more time supporting fragile babies and their families.”
+              </p>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Dr. Elena Ramos, MD, FAAP</span>
+<p class="font-label-md text-label-md text-on-surface-variant">Chief of Neonatology, Children's Pavilion Hospital</p>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: RESPONSIBLE AI, PATIENT PRIVACY & COMPLIANCE SAFEGUARDS -->
+<section class="w-full bg-surface-container-low py-space-2xl">
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-3xl mx-auto text-center mb-space-2xl">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-tertiary font-bold">Privacy Architecture</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Responsible AI &amp; Zero-Trust Privacy Safeguards</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Built according to strict medical ethics. SIM.AI enforces physical and algorithmic privacy separation at the hardware edge.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Privacy Pillar 1 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-tertiary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">shield_person</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Strict Edge-Only Processing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Raw high-definition video frames are rendered directly into volatile memory on hospital-managed on-prem edge micro-nodes. Pixel data is processed in real time and never leaves the local NICU VLAN.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/10 text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Zero Cloud Video Ingestion</span>
+</div>
+</div>
+<!-- Privacy Pillar 2 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Role-Based Smart Authentication</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              NFC badge tap authorization and automated session locking protect bedside displays from unauthorized viewing. Comprehensive immutable audit logs record every clinician metric check.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/10 text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>SOC2 Type II &amp; HIPAA Verified</span>
+</div>
+</div>
+<!-- Privacy Pillar 3 -->
+<div class="rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Non-Diagnostic Advisory Notice</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              SIM.AI functions strictly as an adjunct continuous vigilance monitoring and clinical decision-support tool. It does not replace primary physician diagnostic assessments or emergency bedside resuscitation protocols.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/10 text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>FDA Class II Predicate Guidance</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+<section class="w-full bg-surface py-space-2xl">
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop max-w-4xl mx-auto">
+<div class="text-center mb-space-xl">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-bold">Clinician &amp; BioMed Inquiries</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Clear answers regarding optical biomechanics, infrared safety, and hospital infrastructure readiness.
+        </p>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-md text-on-surface">How does SIM.AI monitor respiratory rate without skin adhesive leads?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md md:px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed border-t border-outline-variant/10 pt-space-sm">
+            SIM.AI utilizes High-Frequency Photometric Displacement Tracking (HPDT). By analyzing micro-pixel motion vectors of the infant's subcostal and sternal excursions in the 940nm spectrum, the neural network resolves thoracic expansions with sub-millimeter precision—even through standard hospital swaddling or incubator plastic covers.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-md text-on-surface">Is 940nm infrared illumination safe for premature infant retinas?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md md:px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed border-t border-outline-variant/10 pt-space-sm">
+            Yes, completely. SIM.AI operates in the deep infrared spectrum (940nm), which is invisible to the human and neonatal eye. It emits zero visible light, causing no stimulus to underdeveloped pupillary reflexes or disruption of circadian melatonin cycles. The power level complies with IEC 62471 Photobiological Safety standards for exempt group clinical applications.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-md text-on-surface">Does SIM.AI connect with our existing hospital VMS or nurse call system?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md md:px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed border-t border-outline-variant/10 pt-space-sm">
+            SIM.AI features an enterprise integration layer supporting standard HL7 v2.x, FHIR R4, and dry-contact or SIP-based nurse call alerting. It bridges seamlessly into central monitoring stations like Philips IntelliVue, GE CARESCAPE, and hospital Rauland / Vocera messaging workflows.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md md:p-space-lg flex items-center justify-between text-left gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-headline-md text-headline-md text-on-surface">What are the hardware requirements for edge inference?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform transition-transform">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md md:px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md leading-relaxed border-t border-outline-variant/10 pt-space-sm">
+            Each monitoring pod integrates its own low-power TPU acceleration module, requiring only standard Power-over-Ethernet (PoE+ 802.3at) or a 12V medical-isolated DC power adapter. No local server racks or costly GPU clusters are required within the NICU unit.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: FINAL HIGH-CONVERSION CTA BANNER -->
+<section class="w-full bg-surface pb-space-2xl">
+<div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="relative rounded-3xl bg-primary-container text-on-primary overflow-hidden p-space-xl md:p-space-2xl shadow-xl">
+<!-- Ambient decorative circles inside card -->
+<div class="pointer-events-none absolute -right-20 -bottom-20 w-96 h-96 bg-primary rounded-full blur-2xl opacity-60"></div>
+<div class="pointer-events-none absolute left-10 -top-10 w-72 h-72 bg-secondary-container rounded-full blur-3xl opacity-30"></div>
+<div class="relative z-10 max-w-3xl">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-on-primary/10 text-on-primary font-label-caps text-label-caps uppercase tracking-wider mb-space-md">
+<span class="material-symbols-outlined text-[15px]">medical_services</span>
+            Institutional Evaluation Program
+          </span>
+<h2 class="font-headline-xl text-headline-xl md:text-display-lg-mobile text-on-primary tracking-tight mb-space-md leading-tight">
+            Empower your NICU team with intelligent neonatal vigilance.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed mb-space-xl">
+            Join premier academic pediatric hospitals piloting non-invasive biometric telemetry. Schedule a tailored simulation review with our clinical engineering staff.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md mb-space-xl">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-3.5 rounded-xl bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-md hover:bg-surface-container hover:text-primary-container transition-all" href="#">
+<span>Request 30-Day Hospital Evaluation</span>
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-3.5 rounded-xl bg-primary text-on-primary border border-on-primary/20 font-label-lg text-label-lg hover:bg-on-primary/10 transition-all" href="#">
+<span>Contact Biomedical Engineering</span>
+<span class="material-symbols-outlined text-[18px]">build</span>
+</a>
+</div>
+<div class="flex flex-wrap items-center gap-space-lg text-on-primary-container pt-space-xs">
+<div class="flex items-center gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">verified</span>
+<span>Complimentary Pilot Hardware Provided</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">support_agent</span>
+<span>24/7 Clinical Specialist Staffing</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">verified_user</span>
+<span>IRB-Ready Research Support</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL: VIDEO DEMO PREVIEW (Micro-interaction) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-space-md hidden" id="video-preview-modal">
+<div class="bg-surface-container-lowest rounded-3xl max-w-3xl w-full p-space-lg shadow-xl relative">
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/20 mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+<span class="font-headline-md text-headline-md text-on-surface">SIM.AI Bedside Demonstration</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('video-preview-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="aspect-video w-full rounded-2xl bg-surface-dim overflow-hidden relative flex items-center justify-center">
+<img alt="Preview" class="w-full h-full object-cover filter brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWQlY20MGYqMNKMf6OAy5ATn6u_6Yt4gFyBY7LSlgdtxf1nUB-mgSBpEc76OgmK4H7kaUWgsxvvEdp_RIhm6pcVojDWWUs_liDSTlKB5g0g9jsEGwBD5LMrq4KC6UV5PUpMumYGREWllMQbDRw0XG4W4j8BHaRrKjLNNOG8OfqWxAed1QdF0LWQnfgoa9z_UFj4b54OhrWK7_VEpCats3sk9n8IHHvOw0Idm-m61cHym89ZSKtqS-E3Q">
+<div class="absolute inset-0 flex flex-col items-center justify-center gap-space-xs text-on-primary">
+<div class="w-16 h-16 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-lg cursor-pointer transform hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[36px]">play_arrow</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold">Simulated Stream: Neonatal Optical RR Estimation</span>
+<span class="font-body-sm text-body-sm opacity-80">Resolution: 1080p @ 60 FPS • 940nm Passive IR</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Confidential medical simulator recording for verification review.</span>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md" onclick="document.getElementById('video-preview-modal').classList.add('hidden')" type="button">Dismiss</button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Script for FAQ Accordions -->
+<script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close all accordion panels in this container
+      document.querySelectorAll('#faq-accordion .faq-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('#faq-accordion .material-symbols-outlined').forEach(el => el.classList.remove('rotate-180'));
+      
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-2xl pb-space-xl shadow-[0_-1px_6px_rgba(23,52,93,0.03)]"><div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-lg"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[16px]">nest_cam_iq_outdoor</span></div><span class="font-headline-md text-headline-md text-on-surface">SIM.AI Incubator Monitor</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Next-generation neonatal vigilance platform translating continuous biometric waveforms into compassionate, explainable AI early warnings for level II–IV NICUs.</p><div class="flex flex-wrap items-center gap-space-xs pt-space-xs"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-caps text-label-caps"><span class="material-symbols-outlined text-tertiary text-[14px]">verified_user</span>HIPAA Compliant</span><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-caps text-label-caps"><span class="material-symbols-outlined text-primary text-[14px]">upload_file</span>FDA 510(k) Pre-Market</span><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-caps text-label-caps"><span class="material-symbols-outlined text-secondary text-[14px]">sync_alt</span>HL7 / FHIR R4</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">Platform</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="landing" href="#">Overview &amp; Features</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">Bedside Architecture</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="technology-ai" href="#">Predictive Waveform AI</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule-nicu-demo" href="#">Clinical Trial Protocol</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">Compliance &amp; Trust</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">Cybersecurity Protocols</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">EHR/EMR Interoperability</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">Data Governance &amp; BAA</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">FDA Regulatory Submissions</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">NICU Support</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule-nicu-demo" href="#">Request Hospital Pilot</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="sign-in" href="#">Clinician Portal</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">Incident Reporting</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">Bioengineering Specs</a></div></div><div class="pt-space-lg bg-transparent flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md text-on-surface-variant"><div class="flex flex-col gap-1"><p class="font-label-caps text-label-caps text-on-surface-variant">© 2025 SIM.AI Medical Technologies, Inc. All rights reserved. For institutional clinical evaluation and investigational use where designated.</p><p class="font-label-caps text-label-caps text-on-surface-variant">Notice: SIM.AI Incubator Monitor is currently under FDA 510(k) Pre-Market Review. Statements have not been evaluated as sole diagnostic determinations.</p></div><div class="flex items-center gap-space-md font-label-md text-label-md"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-privacy" href="#">Security Disclosures</a></div></div></div></footer>
+
+</body></html>

@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-container-lowest": "#ffffff",
+        "tertiary-fixed-dim": "#75d8c2",
+        "on-secondary-container": "#4a3886",
+        "surface-tint": "#1b59c1",
+        "inverse-surface": "#123059",
+        "surface": "#f9f9ff",
+        "on-primary-container": "#d8e1ff",
+        "primary-fixed-dim": "#b0c6ff",
+        "tertiary-container": "#007161",
+        "error-container": "#ffdad6",
+        "on-background": "#001b3d",
+        "on-tertiary": "#ffffff",
+        "surface-bright": "#f9f9ff",
+        "on-secondary-fixed-variant": "#4b3988",
+        "inverse-on-surface": "#ecf0ff",
+        "outline": "#737784",
+        "tertiary-fixed": "#91f4de",
+        "on-tertiary-fixed-variant": "#005144",
+        "on-tertiary-container": "#90f3dd",
+        "secondary-fixed-dim": "#ccbdff",
+        "secondary-container": "#baa7fe",
+        "on-primary-fixed": "#001945",
+        "on-secondary": "#ffffff",
+        "inverse-primary": "#b0c6ff",
+        "background": "#f9f9ff",
+        "on-tertiary-fixed": "#00201a",
+        "surface-container": "#e8eeff",
+        "tertiary": "#00564a",
+        "secondary": "#6352a2",
+        "error": "#ba1a1a",
+        "surface-container-low": "#f0f3ff",
+        "on-surface": "#001b3d",
+        "surface-dim": "#c9dbff",
+        "on-primary-fixed-variant": "#00429b",
+        "surface-container-high": "#dfe8ff",
+        "on-primary": "#ffffff",
+        "primary-fixed": "#d9e2ff",
+        "surface-container-highest": "#d6e3ff",
+        "on-error-container": "#93000a",
+        "on-surface-variant": "#424653",
+        "on-secondary-fixed": "#1f045b",
+        "secondary-fixed": "#e7deff",
+        "primary": "#0047a6",
+        "primary-container": "#245fc7",
+        "outline-variant": "#c3c6d5",
+        "surface-variant": "#d6e3ff",
+        "on-error": "#ffffff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-md": "1rem",
+        "space-lg": "1.5rem",
+        "space-xl": "2rem",
+        "gutter-desktop": "1.5rem",
+        "margin": "1rem",
+        "gutter": "1.25rem",
+        "space-sm": "0.75rem",
+        "space-2xl": "3rem",
+        "space-xxs": "0.25rem",
+        "margin-desktop": "2rem",
+        "space-xs": "0.5rem",
+        "margin-tablet": "1.5rem"
+      },
+      "fontFamily": {
+        "body-sm": ["Inter"],
+        "display-lg-mobile": ["Plus Jakarta Sans"],
+        "headline-md": ["Plus Jakarta Sans"],
+        "headline-lg": ["Plus Jakarta Sans"],
+        "display-lg": ["Plus Jakarta Sans"],
+        "body-lg": ["Inter"],
+        "headline-xl": ["Plus Jakarta Sans"],
+        "label-caps": ["Inter"],
+        "label-lg": ["Inter"],
+        "body-md": ["Inter"],
+        "vital-metric-sm": ["Plus Jakarta Sans"],
+        "label-md": ["Inter"],
+        "headline-xl-mobile": ["Plus Jakarta Sans"],
+        "vital-metric-lg": ["Plus Jakarta Sans"]
+      },
+      "fontSize": {
+        "body-sm": ["0.875rem", {"lineHeight": "1.25rem", "fontWeight": "400"}],
+        "display-lg-mobile": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "headline-md": ["1.25rem", {"lineHeight": "1.75rem", "fontWeight": "600"}],
+        "headline-lg": ["1.5rem", {"lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "display-lg": ["3.5rem", {"lineHeight": "4.25rem", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "body-lg": ["1.125rem", {"lineHeight": "1.75rem", "fontWeight": "400"}],
+        "headline-xl": ["2.25rem", {"lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+        "label-caps": ["0.6875rem", {"lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700"}],
+        "label-lg": ["0.875rem", {"lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600"}],
+        "body-md": ["1rem", {"lineHeight": "1.5rem", "fontWeight": "400"}],
+        "vital-metric-sm": ["1.75rem", {"lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "label-md": ["0.75rem", {"lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "headline-xl-mobile": ["1.75rem", {"lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "vital-metric-lg": ["2.75rem", {"lineHeight": "3rem", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-space-md pt-space-md pb-space-sm"><div class="flex items-center gap-space-xs"><img alt="SIM.AI Incubator Monitor Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPu0UluRKhPIT2XiBHWagzoupynFZJ_omjrOWXqTIu9Xh3JxrRf0D__M7HznZYgKIrLBcyv5WGYm3MJkkTx0uxM8iPO4IGuKv7X-VQ6vFTt3yxGsdkO3xDnhwZefjswtLXeopxDqn7rFDa52dpAEwGCbcJwmN08IxZuIsByBy-NDUS4SH-pCVUcexj7o0mGtHRX1uyXvka-FjmILGNjNJPvZLS-DpaCR-D0AOhIMAmuDnGHpJTd9ubiA"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">SIM.AI</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mt-0.5">NICU Telemetry</span></div></div><p class="font-label-md text-label-md text-on-surface-variant mt-space-xs leading-tight">Smarter Monitoring. Healthier Tomorrows.</p></div><div class="px-space-md pb-space-sm"><div class="bg-surface-container-low rounded-xl p-space-xs flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface-variant truncate">St. Jude Children's</span><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-tertiary-container/15 text-tertiary-container font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>Connected</span></div><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">NICU Pod 4 • Station Alpha</span></div></div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span>Dashboard</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="live-monitoring" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">videocam</span><span>Live Monitoring</span></div><span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="children" href="#"><span class="material-symbols-outlined text-[20px]">child_care</span><span>Children</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="alerts" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">notifications_active</span><span>Alerts</span></div><span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-bold">3</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="rooms-and-beds" href="#"><span class="material-symbols-outlined text-[20px]">single_bed</span><span>Rooms &amp; Beds</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="medications" href="#"><span class="material-symbols-outlined text-[20px]">medication</span><span>Medications</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">clinical_notes</span><span>Reports</span></a><a class="flex items-center gap-space-xs px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-sm"><div class="bg-surface-container-low rounded-xl p-space-xs flex flex-col gap-space-xxs"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Shift Active</span></div><button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg transition-colors" title="Quick Lock Console" type="button"><span class="material-symbols-outlined text-[16px]">lock</span></button></div><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-snug truncate">Dr. Sarah Jenkins</span><span class="font-label-md text-label-md text-on-surface-variant leading-none">NNP • 07:00 – 19:00</span></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px]">home_health</span><span class="font-semibold text-on-surface">Pod 4 Telemetry</span><span class="text-outline-variant">/</span><span class="text-on-surface-variant font-medium truncate">Live Overview</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span><input class="w-full h-10 pl-9 pr-14 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="Search infant by MRN, bed, mother's name, or alert..." type="text"/><span class="absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container-highest font-label-caps text-label-caps text-on-surface-variant">⌘K</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden xl:flex items-center gap-2 px-space-sm py-1.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-medium"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span>All 8 Incubators Synced</span></div><button class="flex items-center gap-1.5 bg-primary-container hover:bg-primary text-on-primary px-space-sm py-2 rounded-xl font-label-lg text-label-lg font-semibold transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>Register Newborn</span></button><button class="relative p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-2 pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0kWP5zF77ShnguiPUaaiMTqdiOB8lt5U2M4o6e2ctkxDzJh7wY-oBoRLqjzcXcXDrdkZ0P5YUAkGqTU8d_4asEcTqo0YiqAegQzLgtaMiV2FOaF5MMeAdt6C-FMdlS6oM64Dw2JCj9aclvZdZN_h69gJIgiRK1Xv0xQcpILvVcjBiSXcsJBGHNuvsXZvOJZtrUUMvdUQqrF-4jtq9qfBvHpVTWrLRM584ayERA1Jf5OpU1qUOBpldLw"/><div class="hidden md:flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Dr. Sarah Jenkins</span><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface-variant leading-none">NICU Lead Nurse</span><span class="px-1 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-caps text-label-caps leading-none font-bold">St. Jude</span></div></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-gutter-desktop py-space-lg flex flex-col gap-space-lg max-w-[1720px] mx-auto w-full">
+<!-- Header & Clinical Scope Bar -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span>Facility Management</span>
+<span>/</span>
+<span class="text-primary font-semibold">Rooms &amp; Beds Allocation</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+          Rooms &amp; Incubator Allocation — NICU Pod 4
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          Manage unit floor layout, physical incubator devices, contactless camera mapping, and patient bed occupancy.
+        </p>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" id="open-config-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Configure Pod 4</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-secondary-container/30 hover:bg-secondary-container/50 text-on-secondary-container font-label-lg text-label-lg transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">linked_services</span>
+<span>Optical Sensor Calibration</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm" id="btn-add-incubator" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Add Incubator / Bed</span>
+</button>
+</div>
+</div>
+<!-- Filter / Sector Navigation Ribbon -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-sm bg-surface-container-lowest p-2 rounded-xl shadow-sm">
+<div class="flex items-center gap-1 overflow-x-auto pb-1 md:pb-0" id="filter-tabs">
+<button class="filter-pill active px-4 py-2 rounded-xl font-label-lg text-label-lg font-semibold bg-primary-container text-on-primary transition-all shadow-sm whitespace-nowrap" data-filter="all" type="button">
+          All Units (12 Capacity)
+        </button>
+<button class="filter-pill px-4 py-2 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap" data-filter="north" type="button">
+          Pod 4 North (5 Beds)
+        </button>
+<button class="filter-pill px-4 py-2 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap" data-filter="south" type="button">
+          Pod 4 South (5 Beds)
+        </button>
+<button class="filter-pill px-4 py-2 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap" data-filter="iso" type="button">
+          Isolation Room A (2 Beds)
+        </button>
+</div>
+<div class="flex items-center gap-space-xs pl-2">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>Live Grid Synchronized</span>
+</div>
+<button class="p-2 rounded-xl hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="refresh-grid-btn" title="Refresh Telemetry Matrix" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+</div>
+<!-- Bento Metric Cards (4 Summary Highlights) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Total Unit Capacity -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Unit Bed Capacity</span>
+<span class="font-vital-metric-lg text-vital-metric-lg text-on-surface mt-1">12</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">single_bed</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+            10 Active Bays
+          </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+            2 Standby / Spare
+          </span>
+</div>
+</div>
+<!-- Current Occupancy -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Current Census</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-vital-metric-lg text-vital-metric-lg text-on-surface">8</span>
+<span class="font-headline-md text-headline-md text-tertiary-container font-semibold">80% Census</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">child_care</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-1.5">
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-tertiary-container transition-all duration-700" style="width: 80%"></div>
+</div>
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant uppercase">
+<span>8 Assigned</span>
+<span>2 Sterilized Available</span>
+</div>
+</div>
+</div>
+<!-- Device Telemetry Status -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Isolette Sensor Sync</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-vital-metric-lg text-vital-metric-lg text-on-surface">10<span class="text-on-surface-variant font-light text-headline-lg">/10</span></span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-semibold">100% Online</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">vital_signs</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="truncate">6 Dräger Isolette • 4 Atom &amp; GE</span>
+<span class="text-tertiary-container font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            Telemetry Ok
+          </span>
+</div>
+</div>
+<!-- Camera & AI Vision Nodes -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Vision AI Telemetry</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-vital-metric-lg text-vital-metric-lg text-on-surface">8</span>
+<span class="font-label-lg text-label-lg text-secondary font-semibold">Optical Streams</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">videocam</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface-variant">8 Feeds Live • 0 Offline</span>
+<span class="text-secondary font-semibold px-2 py-0.5 rounded-full bg-secondary-fixed/40">2 Unassigned</span>
+</div>
+</div>
+</div>
+<!-- Quick Action / Operational Sub-Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">info</span>
+          Operating Protocol:
+        </span>
+<span class="hidden sm:inline">Clean Room Air Exchange: 24 ACH</span>
+<span class="hidden md:inline">• Environmental Humidity: 55% RH</span>
+<span class="hidden lg:inline">• Primary Sensor Firmware: v4.18.2</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant">Bed View:</span>
+<div class="inline-flex rounded-lg bg-surface-container-highest p-0.5">
+<button class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-semibold text-on-surface shadow-xs" type="button">Pod Cards</button>
+<button class="px-2.5 py-1 rounded-md text-on-surface-variant hover:text-on-surface" type="button">Dense List</button>
+</div>
+</div>
+</div>
+<!-- Incubator Bay Grid (10 populating Pod 4) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-space-md" id="bay-grid">
+<!-- Bay 4A -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="north">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Bay 4A</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4A • Room 401</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Baby Chloe Kim</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">MRN: #904-8122 • GA 30w 2d • D14</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-semibold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+            Active
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<!-- Hardware Specs -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">Dräger Isolette 8000</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ISO-4481</span>
+</div>
+<!-- Contactless Camera / Sensor Stream -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden bg-surface-container-high group">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Close up overhead gentle infrared medical camera monitoring view of a tiny premature infant resting safely inside a high tech glass incubator with warm soft illumination, physiological sensors, tranquil and sterile NICU environment with soft blue tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl67Q6pLhG-eFbcgrmuEGiRwwA3TFxxQAb41OIb8ZKQwllfAjrck4hzCVVDDkY1sXeJh7LxWpOsYKGjZdynJEv3HhEh2ioraJnEDzfALcAZCWAR4EwmUa5mHiZLGvoVQIGNX6ZngVuMKqzu-yQILfgqms7VieinvAZf72PC0YIUd8GFfxfE8WuvXgFubpBNxjThD7tZ_4ewvLXjGlM5wp9nOPzPD_G7H-H-OmI4LT9b_x8EDo3H10CxA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-inverse-surface/70 text-inverse-on-surface font-label-caps text-label-caps backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              CAM-4A • 1080p IR
+            </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-inverse-on-surface font-label-caps text-label-caps">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">visibility</span>
+                Chest Excursion AI Tracking
+              </span>
+<span class="text-tertiary-fixed font-bold">30 FPS</span>
+</div>
+</div>
+<!-- Live Vitals Mini-Grid -->
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HR (bpm)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">142</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SpO2 (%)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">97%</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">95-100</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Air Temp</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">36.7°</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Skin: 36.5°</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="flex-1 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+            Manage Bed
+          </button>
+<button class="flex-1 py-2 rounded-xl bg-primary-container/10 hover:bg-primary-container/20 text-primary font-label-lg text-label-lg transition-colors text-center" type="button">
+            Full Patient
+          </button>
+<button class="p-2 rounded-xl hover:bg-surface-container text-on-surface-variant" title="Bed Settings" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Bay 4B: High Acuity Watch -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="north">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Bay 4B</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4B • Room 401</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Baby Maya Lin</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">MRN: #904-8119 • GA 29w 4d • D4</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-bold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+            High Acuity
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<!-- Hardware Specs -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">Dräger Isolette 8000</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ISO-4482</span>
+</div>
+<!-- Camera Stream -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden bg-surface-container-high group">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Top down optical telemetry video feed of a premature baby inside a hospital incubator receiving intensive care with CPAP breathing support tube and continuous soft monitor lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5vK5-sO90t7vJdD4qc8pCl0RhF1dsgwacMhl_mYJGgyvR8s6v8Rlyf5pYSccrtpS3sBNqdWBVcNE2Y4TC17i9Js4jy1E5r_kc7LVxVZqW4yWuJV-CrUcBQHZolrqD9WwInCQcvjcdFgLm30fNJVZCfr26wGP-ivU9ki4Ym2vTdP-KgvMKwCbTp1qFNUaTplmJbPUTuEOy4Z3eESoau4CTaCxHd6PYGTE53fzk7J39RQ-9a7Nw5JqYiQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-inverse-surface/70 text-inverse-on-surface font-label-caps text-label-caps backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              CAM-4B • 1080p IR
+            </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-inverse-on-surface font-label-caps text-label-caps">
+<span class="flex items-center gap-1 text-secondary-container">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                Apnea Detection Guard
+              </span>
+<span class="text-error-container font-bold">Attention</span>
+</div>
+</div>
+<!-- Live Vitals Mini-Grid -->
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-error-container/20 flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HR (bpm)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-error mt-0.5">168</span>
+<span class="font-label-md text-label-md text-error font-semibold">Tachycardic</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SpO2 (%)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">93%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Borderline</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Air Temp</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">36.9°</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Humidity 65%</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="flex-1 py-2 rounded-xl bg-error hover:bg-error/90 text-on-error font-label-lg text-label-lg transition-colors text-center shadow-xs" type="button">
+            Acuity Panel
+          </button>
+<button class="flex-1 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+            Manage Bed
+          </button>
+</div>
+</div>
+<!-- Bay 4C -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="north">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Bay 4C</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4C • Room 402</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Baby Oliver Smith</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">MRN: #904-7901 • GA 32w 5d • D8</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-semibold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+            Stable
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">GE Giraffe OmniBed</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-GE-9081</span>
+</div>
+<!-- Camera Stream -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden bg-surface-container-high group">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="High tech GE Giraffe medical incubator bed in modern hospital room with soft ambient light, pediatric monitoring sensors, and tiny newborn swaddled securely in medical nest." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_dH28gsRZjtwN8gsOAhbcpMoOBpbK1TwPIq2ulhvOc5JaeHg0VIux8QisTe68f80JdeiDjGWI-aFXSB2ytjZcp40qxy30bPCEWc52nvMKKi7i71qHOlC_XO_xGBUCLTPN_vgjm2BTOGrTAkSpJL4ngZYz6EJaROaE1VIgrI9WYpv2zRwgKaPOoL8TebK9vrxqxauyfCQ6GhEX8pSbaD6mpvCTcJ094Dgfujof4_mzh-rCvjR0GtH_4g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-inverse-surface/70 text-inverse-on-surface font-label-caps text-label-caps backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              CAM-4C • 1080p IR
+            </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-inverse-on-surface font-label-caps text-label-caps">
+<span>Bed Canopy Open: 0%</span>
+<span class="text-tertiary-fixed font-semibold">AI Synced</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HR (bpm)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">138</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Optimal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SpO2 (%)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">99%</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Room Air</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Weight</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">1.82<span class="text-body-sm font-normal">kg</span></span>
+<span class="font-label-md text-label-md text-tertiary-container">+25g / 24h</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="flex-1 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+            Manage Bed
+          </button>
+<button class="flex-1 py-2 rounded-xl bg-primary-container/10 hover:bg-primary-container/20 text-primary font-label-lg text-label-lg transition-colors text-center" type="button">
+            Full Patient
+          </button>
+</div>
+</div>
+<!-- Bay 4D -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="north">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Bay 4D</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4D • Room 402</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Baby Clara Ruiz</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">MRN: #904-8055 • GA 33w 0d • D2</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-semibold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+            Stable
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">GE Giraffe OmniBed</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-GE-9084</span>
+</div>
+<!-- Camera Stream -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden bg-surface-container-high group">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Top-angle medical isolette view displaying peaceful infant resting inside controlled humidity nursery suite with gentle blue LED ambient illumination and precise telemetry indicators." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtF8oBvIjpzTZ1jozUNyWBflmKsPkQPfSPNDz3xshykOp5VWcuaJyedrWgHOgv5RNi6OXbKd61qYCVZOLCapDXaaKOh0OQ-hOOb9jApH-7BfddXbiMarkcxxT_IlEYlMRmTL-CK3lJdOEfEfdc7vJwzDbLpKU8nUlWgV0izKxvI6eBNoWG97nuxThhw58olk1IsCqWF1cBkxpXjLm5KPrXPaheNJqH5cx4sYfE15zdpEz0uV9dkj8CJA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-inverse-surface/70 text-inverse-on-surface font-label-caps text-label-caps backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              CAM-4D • 1080p IR
+            </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-inverse-on-surface font-label-caps text-label-caps">
+<span>Thermal Blanket: Active</span>
+<span class="text-tertiary-fixed">Nominal</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HR (bpm)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">134</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SpO2 (%)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">98%</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Good</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Air Temp</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">36.6°</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Skin: 36.4°</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="flex-1 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+            Manage Bed
+          </button>
+<button class="flex-1 py-2 rounded-xl bg-primary-container/10 hover:bg-primary-container/20 text-primary font-label-lg text-label-lg transition-colors text-center" type="button">
+            Full Patient
+          </button>
+</div>
+</div>
+<!-- Bay 4E -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="north">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Bay 4E</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4E • Room 403</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Baby Leo Chen</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">MRN: #904-8140 • GA 31w 1d • D11</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-md text-label-md font-semibold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+            Active
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">Atom IncuArch</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ATM-2201</span>
+</div>
+<!-- Camera Stream -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden bg-surface-container-high group">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Intensive care unit nursery bay showing modern compact Atom IncuArch neonatal pod with infant sleeping under warm calm lighting, subtle vitals telemetry graphical HUD overlay." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDX907ZbXTLANKmJH-qjHZdpm1eY11t9pcFC-j14TOJ75D__kj8yH8AJTFWVb2Xbv6cQOabyfwGhgfHrjf-bnNRLh4tJ37-GvOu2lNVLjVEs-LDxwQ3vFh5daMBrya_p6c8xr5NUtlx779rWYD1YpR-CqDqDrci1WKoYzJb_1L6fSlidchp3AeJMcPSGnrdiXul1SccrnVIbMkExM_DBYdU1j0Ef0ewuulwAShDAtJWdYd3ouOTwFH95Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-inverse-surface/70 text-inverse-on-surface font-label-caps text-label-caps backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              CAM-4E • 1080p IR
+            </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-inverse-on-surface font-label-caps text-label-caps">
+<span>Motion Index: Low</span>
+<span class="text-tertiary-fixed font-bold">Stable</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HR (bpm)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">140</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SpO2 (%)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">96%</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Air Temp</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">36.8°</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Skin: 36.6°</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="flex-1 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+            Manage Bed
+          </button>
+<button class="flex-1 py-2 rounded-xl bg-primary-container/10 hover:bg-primary-container/20 text-primary font-label-lg text-label-lg transition-colors text-center" type="button">
+            Full Patient
+          </button>
+</div>
+</div>
+<!-- Bay 4F: Empty Sterilized Bay -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="south">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-tertiary-fixed/15">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container text-on-tertiary font-label-caps text-label-caps uppercase tracking-wide">Bay 4F</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4F • Room 404</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-tertiary-container font-semibold mt-1">Available Bay</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Sterilized &amp; Prepared for Admission</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px]">sanitizer</span>
+            Ready
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="font-semibold text-on-surface truncate">Dräger Isolette 8000</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ISO-4483</span>
+</div>
+<!-- Empty Bed Visual Area with SVG Graphic -->
+<div class="relative w-full h-32 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center p-3">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed/40 flex items-center justify-center text-tertiary mb-2">
+<span class="material-symbols-outlined text-[26px]">crib</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Vacant • Pre-warmed to 36.5°C</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5">Terminal Clean Completed: 06:45 Today</span>
+</div>
+<!-- Specs Box -->
+<div class="p-space-xs rounded-xl bg-surface-container-low flex flex-col gap-1 text-on-surface-variant font-label-md text-label-md">
+<div class="flex justify-between">
+<span>Assigned Nurse:</span>
+<span class="font-semibold text-on-surface">Rotating Pool</span>
+</div>
+<div class="flex justify-between">
+<span>Infusion Pumps:</span>
+<span class="text-tertiary font-medium">3 Linked &amp; Purged</span>
+</div>
+<div class="flex justify-between">
+<span>Overhead Optical:</span>
+<span class="text-on-surface font-semibold">CAM-4F Calibrated</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="w-full py-2.5 rounded-xl bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-lg text-label-lg font-semibold transition-colors flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Assign Newborn to Bay</span>
+</button>
+</div>
+</div>
+<!-- Bay 4G -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="south">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Bay 4G</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4G • Room 404</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Baby Sophia Miller</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">MRN: #904-8177 • GA 28w 6d • D18</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md font-semibold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Observation
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">Atom Dual Incu</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ATM-2209</span>
+</div>
+<!-- Camera Stream -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden bg-surface-container-high group">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Clinical hospital camera view of an extremely preterm newborn resting inside a modern humidified incubator with soft cover drape reducing sensory overload in neonatal intensive care." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYof5uTN187YexucJYN3ho3luF8dVBwQezPR_bhk9iqXEz-QNQTJAXjd5HChDxp00R_sGqrpXTJpIYluyYdvGeswtHGwuBcWFecnV7VxX_MFWJV84MXZ_-sJ4YPX8o9x2RKnAX92MBJ91rZL1_WxBBCLHXnareNwkJZM89pipLCu2iSU7xUMOsMY90pQc31Yf0Wuzd0MfjFSE81zjYFERWawQ6M4jricyPWJAqqFud6p49kmoOgvOLFA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-inverse-surface/70 text-inverse-on-surface font-label-caps text-label-caps backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              CAM-4G • 1080p IR
+            </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-inverse-on-surface font-label-caps text-label-caps">
+<span>Incubator Cover: 80% Drape</span>
+<span class="text-tertiary-fixed">Active Light Shield</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HR (bpm)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">146</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SpO2 (%)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">95%</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Air Temp</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">37.1°</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Skin: 36.8°</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="flex-1 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+            Manage Bed
+          </button>
+<button class="flex-1 py-2 rounded-xl bg-primary-container/10 hover:bg-primary-container/20 text-primary font-label-lg text-label-lg transition-colors text-center" type="button">
+            Full Patient
+          </button>
+</div>
+</div>
+<!-- Bay 4H: Phototherapy Active -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="south">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-secondary-fixed/20">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wide">Bay 4H</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bed 4H • Room 405</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Baby Noah Davis</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">MRN: #904-8092 • GA 34w 1d • D3</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-label-md font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px]">light_mode</span>
+            Phototherapy
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">Dräger Isolette 8000</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ISO-4484</span>
+</div>
+<!-- Camera Stream with blue light tint -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden bg-surface-container-high group">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-500" data-alt="Overhead camera perspective of a newborn with protective eye shields under blue light phototherapy lamp treatment inside an incubator in a neonatal intensive care unit." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdGwaqhAIMtbwmFp7zzITjXhjqLer0MwkXMIdmWYqLHKR5SEkzr-Yh9-gyAsGoELg-lqLVkfnou6MceDzRIRwtVk33JV12uHWSz9SHFy3l6UhuWmHDzgmS-0A5nDF1_wukV6zyZ6h2M3U-bQUaHNBzKslsIALZeyuqTTiu10KnnQ6yJeqCSveTDduU2vfV_UV9BN5-5r5VQXm6vgcKmTUD_3p6qTE9tWzu7BcTz1Pq--49JXFoV3TE2g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 flex items-center gap-1 px-2 py-0.5 rounded-md bg-inverse-surface/70 text-inverse-on-surface font-label-caps text-label-caps backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              CAM-4H • 1080p IR
+            </div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-inverse-on-surface font-label-caps text-label-caps">
+<span>BiliLux Unit: 35 µW/cm²</span>
+<span class="text-tertiary-fixed font-semibold">14h of 24h</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">HR (bpm)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">144</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">SpO2 (%)</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">97%</span>
+<span class="font-label-md text-label-md text-tertiary-container font-semibold">Normal</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bilirubin</span>
+<span class="font-vital-metric-sm text-vital-metric-sm text-on-surface mt-0.5">11.2</span>
+<span class="font-label-md text-label-md text-tertiary-container">Trending -2.1</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="flex-1 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+            Manage Bed
+          </button>
+<button class="flex-1 py-2 rounded-xl bg-primary-container/10 hover:bg-primary-container/20 text-primary font-label-lg text-label-lg transition-colors text-center" type="button">
+            Full Patient
+          </button>
+</div>
+</div>
+<!-- Bay 4I: Maintenance / Calibration Warning -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="iso">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-high/60">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-outline-variant text-on-surface font-label-caps text-label-caps uppercase tracking-wide">Bay 4I</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Isolation Room A • Bay 01</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Calibration Scheduled</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Biomedical Engineering Tag #BE-882</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px] text-error">build</span>
+            Service Due
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-outline">medical_services</span>
+<span class="font-semibold text-on-surface truncate">Dräger Isolette 8000</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ISO-4485</span>
+</div>
+<!-- Maintenance graphic card -->
+<div class="relative w-full h-32 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center p-3">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-[24px]">engineering</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Preventative Maintenance Due in 48h</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5">HEPA Filter &amp; O2 Sensor Verification</span>
+</div>
+<div class="p-space-xs rounded-xl bg-surface-container-low flex flex-col gap-1 text-on-surface-variant font-label-md text-label-md">
+<div class="flex justify-between">
+<span>Bay Status:</span>
+<span class="font-semibold text-on-surface">Offline for Admissions</span>
+</div>
+<div class="flex justify-between">
+<span>Technician Assigned:</span>
+<span class="text-on-surface font-semibold">M. Reynolds (BioMed)</span>
+</div>
+<div class="flex justify-between">
+<span>Scheduled Slot:</span>
+<span class="text-primary font-medium">Tomorrow 10:00 AM</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="w-full py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+<span>View BioMed Service Ticket</span>
+</button>
+</div>
+</div>
+<!-- Bay 4J: Standby Bay -->
+<div class="bay-card flex flex-col bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" data-sector="iso">
+<div class="p-space-md pb-space-sm flex items-start justify-between gap-space-xs bg-surface-container-low/40">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-outline-variant text-on-surface font-label-caps text-label-caps uppercase tracking-wide">Bay 4J</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Isolation Room A • Bay 02</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Standby Bay</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Surge Reserve Incubator Ready</p>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            Standby
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm flex-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">medical_services</span>
+<span class="font-semibold text-on-surface truncate">Atom Dual Incu</span>
+</div>
+<span class="shrink-0 font-label-caps text-label-caps bg-surface-container-highest px-1.5 py-0.5 rounded text-on-surface-variant">SN-ATM-2214</span>
+</div>
+<!-- Standby graphic -->
+<div class="relative w-full h-32 rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center p-3">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-outline mb-2">
+<span class="material-symbols-outlined text-[26px]">bedtime</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Emergency Pod Prepped</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-0.5">Contactless IR CAM-4J in Sleep State</span>
+</div>
+<div class="p-space-xs rounded-xl bg-surface-container-low flex flex-col gap-1 text-on-surface-variant font-label-md text-label-md">
+<div class="flex justify-between">
+<span>Negative Pressure Air:</span>
+<span class="text-tertiary font-medium">Verified Active (-5 Pa)</span>
+</div>
+<div class="flex justify-between">
+<span>Warmup Time to 37°C:</span>
+<span class="text-on-surface font-semibold">12 Minutes Rapid Cycle</span>
+</div>
+<div class="flex justify-between">
+<span>Bed Tag:</span>
+<span class="text-on-surface font-semibold">Isolation Primary Surge</span>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 mt-auto flex items-center gap-2">
+<button class="w-full py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">power_settings_new</span>
+<span>Activate Standby Pod</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Operations Toolbar & Legend Floor Status Footer -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md mt-space-sm mb-space-lg">
+<!-- Fast Re-assignment Drawer Preview Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>Quick Bed Operations</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Patient Bed Reassignment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Safely transfer newborn profile, sensor streams, and telemetry history to a target incubator bay.
+          </p>
+</div>
+<div class="mt-space-md flex flex-col sm:flex-row items-stretch gap-2">
+<select class="h-10 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest flex-1">
+<option>Select Patient (e.g. Baby Chloe Kim - 4A)</option>
+<option>Baby Chloe Kim (4A)</option>
+<option>Baby Maya Lin (4B)</option>
+<option>Baby Oliver Smith (4C)</option>
+<option>Baby Clara Ruiz (4D)</option>
+<option>Baby Leo Chen (4E)</option>
+<option>Baby Sophia Miller (4G)</option>
+<option>Baby Noah Davis (4H)</option>
+</select>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary transition-colors whitespace-nowrap" type="button">
+            Transfer Bed
+          </button>
+</div>
+</div>
+<!-- Contactless Optical Camera Mapping Control -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-secondary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>AI Vision Pairing</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Overhead Optical Node Pairing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Map overhead high-res infrared cameras with infant chest bounding boxes for contactless RR tracking.
+          </p>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>8 Active Vision Nodes Paired</span>
+</div>
+<button class="px-3.5 py-2 rounded-xl bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-fixed-variant font-label-lg text-label-lg font-semibold transition-colors" type="button">
+            Scan &amp; Pair Camera
+          </button>
+</div>
+</div>
+<!-- Live NICU Pod Status & Environmental Readout -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-tertiary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">nest_multi_room</span>
+<span>Pod 4 Environment</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold mt-1">Environmental Suite</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Ambient sound, acoustic dampening, and circadian light controls are operating within NICU Gold standard.
+          </p>
+</div>
+<div class="mt-space-md grid grid-cols-3 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Noise</span>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold mt-0.5">42 <span class="text-label-md font-normal">dB</span></div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Circadian</span>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold mt-0.5">Cycle 3</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Temp</span>
+<div class="font-headline-md text-headline-md text-tertiary-container font-semibold mt-0.5">24.2°C</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide-Over Drawer: Pod Configuration & Quick Bed Assignment -->
+<div class="fixed inset-0 z-50 pointer-events-none transition-all duration-300 opacity-0" id="config-drawer">
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-xs transition-opacity duration-300" id="drawer-backdrop"></div>
+<div class="absolute top-0 right-0 w-full max-w-lg h-full bg-surface-container-lowest shadow-xl flex flex-col justify-between transform translate-x-full transition-transform duration-300" id="drawer-panel">
+<div class="p-space-lg flex items-center justify-between bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Facility Architecture</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Pod 4 Bay Configuration</h2>
+</div>
+<button class="p-2 rounded-xl hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="close-config-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex-1 overflow-y-auto flex flex-col gap-space-lg">
+<!-- Physical Sector Details -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold">Unit Sector / Wing</label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" type="text" value="NICU Pod 4 — Neonatal Intensive Care Unit"/>
+</div>
+<!-- Add Bay / Isolette Form -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">add_box</span>
+            Register Physical Incubator
+          </span>
+<div class="grid grid-cols-2 gap-space-xs">
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Bay Designation</label>
+<input class="w-full h-10 px-3 mt-1 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="e.g. Bay 4K" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Model Type</label>
+<select class="w-full h-10 px-3 mt-1 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>Dräger Isolette 8000</option>
+<option>GE Giraffe OmniBed</option>
+<option>Atom IncuArch Dual</option>
+</select>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Optical Telemetry IP / MAC</label>
+<input class="w-full h-10 px-3 mt-1 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="192.168.4.128 • [CAM-OVERHEAD-4K]" type="text"/>
+</div>
+<button class="mt-2 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-primary-container transition-colors shadow-sm" type="button">
+            Save Incubator Bay
+          </button>
+</div>
+<!-- Environmental & Alarm thresholds -->
+<div class="flex flex-col gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Alarm Threshold Policies</span>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface">Auto-Notify Lead Nurse on Bradycardia (&lt;100 bpm)</span>
+<input checked="" class="w-5 h-5 rounded text-primary-container accent-primary" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface">Optical Motion Freeze Alarms (Apnea Guard)</span>
+<input checked="" class="w-5 h-5 rounded text-primary-container accent-primary" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface">Standby Bay Fast Pre-Heat Telemetry</span>
+<input checked="" class="w-5 h-5 rounded text-primary-container accent-primary" type="checkbox"/>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-xs">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors" id="cancel-config-btn" type="button">
+          Cancel
+        </button>
+<button class="px-5 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-semibold transition-colors shadow-sm" id="save-config-btn" type="button">
+          Apply Configuration
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Filter & Drawer Logic -->
+<script>
+    (function initRoomsAndBedsView() {
+      // Filter Ribbon Tabs
+      const filterBtns = document.querySelectorAll('#filter-tabs button');
+      const cards = document.querySelectorAll('#bay-grid .bay-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+
+          const filter = btn.getAttribute('data-filter');
+          cards.forEach(card => {
+            const sector = card.getAttribute('data-sector');
+            if (filter === 'all' || sector === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Slide-over Drawer
+      const drawer = document.getElementById('config-drawer');
+      const drawerPanel = document.getElementById('drawer-panel');
+      const openBtn = document.getElementById('open-config-btn');
+      const addIncubatorBtn = document.getElementById('btn-add-incubator');
+      const closeBtn = document.getElementById('close-config-btn');
+      const cancelBtn = document.getElementById('cancel-config-btn');
+      const backdrop = document.getElementById('drawer-backdrop');
+      const saveBtn = document.getElementById('save-config-btn');
+
+      function openDrawer() {
+        drawer.classList.remove('pointer-events-none');
+        drawer.classList.remove('opacity-0');
+        drawerPanel.classList.remove('translate-x-full');
+      }
+
+      function closeDrawer() {
+        drawer.classList.add('pointer-events-none');
+        drawer.classList.add('opacity-0');
+        drawerPanel.classList.add('translate-x-full');
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openDrawer);
+      if (addIncubatorBtn) addIncubatorBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+      if (saveBtn) saveBtn.addEventListener('click', closeDrawer);
+
+      // Refresh Button micro-animation
+      const refreshBtn = document.getElementById('refresh-grid-btn');
+      if (refreshBtn) {
+        refreshBtn.addEventListener('click', function() {
+          const icon = this.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.classList.add('animate-spin');
+            setTimeout(() => {
+              icon.classList.remove('animate-spin');
+            }, 800);
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>
