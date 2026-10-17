@@ -167,7 +167,7 @@ export const CameraAiEventDetailModal: React.FC<CameraAiEventDetailModalProps> =
                   <div className="absolute inset-0 bg-radial from-slate-800 via-slate-900 to-black opacity-90" />
                   
                   {/* Scanner Grid Lines */}
-                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:24px_24px] opacity-25" />
+                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-size-[24px_24px] opacity-25" />
 
                   {/* Infant Silhouette Placeholder Illustration */}
                   <div className="relative z-10 flex flex-col items-center justify-center text-slate-400">

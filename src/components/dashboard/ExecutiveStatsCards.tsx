@@ -16,7 +16,7 @@ export const ExecutiveStatsCards: React.FC<ExecutiveStatsCardsProps> = ({
       {/* 1. Total Infants */}
       <div
         onClick={() => onNavigateToSection?.('patient-roster-section')}
-        className="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-xs border border-outline-variant/30 flex flex-col justify-between min-h-[148px] hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer group"
+        className="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-xs border border-outline-variant/30 flex flex-col justify-between min-h-37 hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer group"
       >
         <div className="flex items-center justify-between">
           <span className="font-mono text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">
@@ -57,7 +57,7 @@ export const ExecutiveStatsCards: React.FC<ExecutiveStatsCardsProps> = ({
       {/* 2. Active Incubators */}
       <div
         onClick={() => onNavigateToSection?.('patient-roster-section')}
-        className="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-xs border border-outline-variant/30 flex flex-col justify-between min-h-[148px] hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer group"
+        className="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-xs border border-outline-variant/30 flex flex-col justify-between min-h-37 hover:border-primary/40 hover:shadow-sm transition-all cursor-pointer group"
       >
         <div className="flex items-center justify-between">
           <span className="font-mono text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">
@@ -98,7 +98,7 @@ export const ExecutiveStatsCards: React.FC<ExecutiveStatsCardsProps> = ({
       {/* 3. Active Alerts */}
       <div
         onClick={() => onNavigateToSection?.('alerts-section')}
-        className={`rounded-2xl p-4 sm:p-5 shadow-xs border flex flex-col justify-between min-h-[148px] hover:shadow-sm transition-all cursor-pointer group ${
+        className={`rounded-2xl p-4 sm:p-5 shadow-xs border flex flex-col justify-between min-h-37 hover:shadow-sm transition-all cursor-pointer group ${
           stats.activeAlerts > 0
             ? 'bg-error-container/20 border-error/40'
             : 'bg-surface-container-lowest border-outline-variant/30 hover:border-tertiary/40'
@@ -155,7 +155,7 @@ export const ExecutiveStatsCards: React.FC<ExecutiveStatsCardsProps> = ({
       {/* 4. Analyzed AI Sessions */}
       <div
         onClick={() => onNavigateToSection?.('ai-sessions-section')}
-        className="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-xs border border-outline-variant/30 flex flex-col justify-between min-h-[148px] hover:border-secondary/40 hover:shadow-sm transition-all cursor-pointer group"
+        className="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-xs border border-outline-variant/30 flex flex-col justify-between min-h-37 hover:border-secondary/40 hover:shadow-sm transition-all cursor-pointer group"
       >
         <div className="flex items-center justify-between">
           <span className="font-mono text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">

@@ -44,6 +44,7 @@ export const AlertsTriageSection: React.FC<AlertsTriageSectionProps> = ({
     email: 'dr.smith@childrenshospital.org',
     role: 'Doctor / Neonatologist',
     department: 'NICU Intensive Care',
+    hospitalName: "Children's Hospital",
     createdAt: new Date().toISOString(),
   }
 

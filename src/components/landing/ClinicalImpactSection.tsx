@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { Icon } from '../ui/Icon'
 
 export const ClinicalImpactSection: React.FC = () => {
@@ -48,7 +48,7 @@ export const ClinicalImpactSection: React.FC = () => {
     },
   }
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
     visible: {
       opacity: 1,

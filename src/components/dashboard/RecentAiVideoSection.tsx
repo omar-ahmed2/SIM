@@ -176,7 +176,7 @@ export const RecentAiVideoSection: React.FC<RecentAiVideoSectionProps> = ({
             </span>
 
             {videoSessions.length === 0 ? (
-              <div className="p-6 rounded-xl bg-surface-container-low/60 border border-outline-variant/20 flex flex-col items-center justify-center text-center gap-2.5 min-h-[190px]">
+              <div className="p-6 rounded-xl bg-surface-container-low/60 border border-outline-variant/20 flex flex-col items-center justify-center text-center gap-2.5 min-h-47.5">
                 <div className="w-10 h-10 rounded-full bg-surface-container-lowest text-secondary shadow-xs flex items-center justify-center border border-outline-variant/30">
                   <Icon name="videocam" size={22} />
                 </div>
@@ -246,7 +246,7 @@ export const RecentAiVideoSection: React.FC<RecentAiVideoSectionProps> = ({
               Shift Audit Trail &amp; Activity Log
             </span>
 
-            <div className="bg-surface-container-low rounded-xl p-3.5 border border-outline-variant/30 max-h-[320px] overflow-y-auto space-y-2.5">
+            <div className="bg-surface-container-low rounded-xl p-3.5 border border-outline-variant/30 max-h-80 overflow-y-auto space-y-2.5">
               {activities.map((act) => (
                 <div
                   key={act.id}

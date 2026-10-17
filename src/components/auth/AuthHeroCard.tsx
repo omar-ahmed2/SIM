@@ -5,13 +5,13 @@ export const AuthHeroCard: React.FC = () => {
   return (
     <div className="bg-surface-container-lowest border border-outline-variant/50 rounded-2xl overflow-hidden shadow-xs flex flex-col h-full">
       {/* Top Incubator Image with Live HUD Tag */}
-      <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] bg-surface-container overflow-hidden">
+      <div className="relative w-full aspect-16/10 sm:aspect-video lg:aspect-4/3 bg-surface-container overflow-hidden">
         <img
           src="src/assets/images/nurse-caregiver.png"
           alt="Clinical team caring for a newborn in a neonatal incubator"
           className="w-full h-full object-cover object-center filter brightness-[0.95]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-on-surface/85 via-on-surface/30 to-transparent" />
 
         {/* Image Overlay Tag */}
         <div className="absolute bottom-4 left-4 right-4 text-white flex items-center justify-between">

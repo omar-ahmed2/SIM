@@ -167,7 +167,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       />
 
       {/* 2. Main Executive Canvas Area */}
-      <div className="pl-0 lg:pl-[260px] flex-1 flex flex-col min-w-0">
+      <div className="pl-0 lg:pl-260px flex-1 flex flex-col min-w-0">
         {/* Sticky Header */}
         <DashboardHeader
           user={user}

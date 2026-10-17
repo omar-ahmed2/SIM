@@ -23,7 +23,7 @@ export const CaregiverTestimonialSection: React.FC = () => {
               <img
                 src="src/assets/images/nurse-caregiver.png"
                 alt="Pediatric nurse caring for premature baby in smart NICU incubator"
-                className="w-full h-auto object-cover rounded-2xl aspect-[4/3]"
+                className="w-full h-auto object-cover rounded-2xl aspect-4/3"
                 loading="lazy"
               />
             </motion.div>

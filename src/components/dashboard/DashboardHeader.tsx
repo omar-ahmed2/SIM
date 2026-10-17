@@ -53,7 +53,7 @@ export const DashboardHeader: React.FC<DashboardHeaderProps> = ({
   const userInitial = user.name.replace(/^Dr\.\s*/i, '').charAt(0) || 'D'
 
   return (
-    <header className="fixed top-0 left-0 lg:left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-outline-variant/30 z-40 flex items-center justify-between px-4 sm:px-6 gap-3">
+    <header className="fixed top-0 left-0 lg:left-260px right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-outline-variant/30 z-40 flex items-center justify-between px-4 sm:px-6 gap-3">
       {/* Left: Mobile Toggle & Breadcrumbs & Search */}
       <div className="flex items-center gap-3 flex-1 max-w-2xl">
         <button
@@ -126,10 +126,10 @@ export const DashboardHeader: React.FC<DashboardHeaderProps> = ({
             </div>
 
             <div className="hidden md:flex flex-col text-left">
-              <span className="text-xs font-bold text-on-surface leading-tight truncate max-w-[130px]">
+              <span className="text-xs font-bold text-on-surface leading-tight truncate max-w-130px">
                 {user.name}
               </span>
-              <span className="text-[10px] text-on-surface-variant font-medium truncate max-w-[130px]">
+              <span className="text-[10px] text-on-surface-variant font-medium truncate max-w-130px">
                 {user.role}
               </span>
             </div>

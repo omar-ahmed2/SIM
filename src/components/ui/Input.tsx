@@ -59,7 +59,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         <div className="relative flex items-center">
           {leftIcon && (
             <span
-              className="absolute left-3.5 text-outline text-[20px] pointer-events-none flex items-center justify-center text-on-surface-variant"
+              className="absolute left-3.5 text-[20px] pointer-events-none flex items-center justify-center text-on-surface-variant"
               aria-hidden="true"
             >
               <Icon name={leftIcon} size={20} />

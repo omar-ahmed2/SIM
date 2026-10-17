@@ -775,7 +775,7 @@ export const ChildProfileDetail: React.FC<ChildProfileDetailProps> = ({
                     className="p-3.5 rounded-xl bg-surface-container-low border border-outline-variant/20 space-y-2 text-xs"
                   >
                     <div className="flex items-center justify-between font-medium">
-                      <span className="font-bold text-on-surface truncate max-w-[160px]">
+                      <span className="font-bold text-on-surface truncate max-w-40">
                         {vid.videoName}
                       </span>
                       <span className="font-mono text-[10px] text-on-surface-variant">

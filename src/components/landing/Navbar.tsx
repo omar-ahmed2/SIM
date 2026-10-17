@@ -145,7 +145,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     aria-expanded={isUserMenuOpen}
                   >
                     <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse" />
-                    <span className="text-xs font-bold text-on-surface truncate max-w-[120px] hidden md:inline">
+                    <span className="text-xs font-bold text-on-surface truncate max-w-30 hidden md:inline">
                       {currentUser.name}
                     </span>
                     <div className="w-7 h-7 rounded-lg bg-primary-fixed text-primary font-bold text-xs flex items-center justify-center shrink-0">
@@ -226,7 +226,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Mobile Hamburger Trigger */}
             <button
               type="button"
-              className="lg:hidden p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="lg:hidden p-2 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors min-h-11 min-w-11 flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
@@ -247,7 +247,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 top-[68px] bg-inverse-surface/40 backdrop-blur-xs z-40 lg:hidden"
+              className="fixed inset-0 top-17 bg-inverse-surface/40 backdrop-blur-xs z-40 lg:hidden"
               onClick={() => setMobileMenuOpen(false)}
               aria-hidden="true"
             />
@@ -258,7 +258,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -16, opacity: 0 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="fixed left-0 right-0 top-[68px] bg-surface-container-lowest border-b border-outline-variant/40 shadow-2xl z-50 lg:hidden px-5 py-6 max-h-[calc(100vh-80px)] overflow-y-auto"
+              className="fixed left-0 right-0 top-17 bg-surface-container-lowest border-b border-outline-variant/40 shadow-2xl z-50 lg:hidden px-5 py-6 max-h-[calc(100vh-80px)] overflow-y-auto"
             >
               <nav className="flex flex-col gap-2" aria-label="Mobile Navigation">
                 {navLinks.map((link) => (

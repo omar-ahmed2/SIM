@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { Icon } from '../ui/Icon'
 
 export const OnboardingStepsSection: React.FC = () => {
@@ -52,7 +52,7 @@ export const OnboardingStepsSection: React.FC = () => {
     },
   }
 
-  const stepCardVariants = {
+  const stepCardVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,

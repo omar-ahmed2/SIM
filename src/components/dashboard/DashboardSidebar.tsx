@@ -89,7 +89,7 @@ export const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
 
       {/* Main Clinical Sidebar Shell */}
       <aside
-        className={`fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest/95 backdrop-blur-md z-50 flex flex-col justify-between shadow-[1px_0_12px_rgba(0,0,0,0.05)] border-r border-outline-variant/30 transition-transform duration-300 ease-out select-none ${
+        className={`fixed left-0 top-0 h-full w-260px bg-surface-container-lowest/95 backdrop-blur-md z-50 flex flex-col justify-between shadow-[1px_0_12px_rgba(0,0,0,0.05)] border-r border-outline-variant/30 transition-transform duration-300 ease-out select-none ${
           isMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}
         aria-label="Clinical Navigation Sidebar"
@@ -106,7 +106,7 @@ export const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
               >
                 {/* Luminous Logo Container */}
                 <div className="relative group">
-                  <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary to-primary-container text-on-primary flex items-center justify-center shadow-md shadow-primary/25 transition-transform group-hover:scale-105">
+                  <div className="w-9 h-9 rounded-xl bg-linear-to-tr from-primary to-primary-container text-on-primary flex items-center justify-center shadow-md shadow-primary/25 transition-transform group-hover:scale-105">
                     <Icon name="nest_cam_iq_outdoor" size={20} />
                   </div>
                   <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-tertiary border-2 border-surface-container-lowest animate-pulse" />
@@ -244,7 +244,7 @@ export const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
           <div className="bg-surface-container-lowest rounded-2xl p-2.5 shadow-2xs border border-outline-variant/30 flex items-center justify-between gap-2">
             <div className="flex items-center gap-2.5 min-w-0">
               {/* Doctor Avatar Pill */}
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-primary-container to-primary text-on-primary font-bold text-xs flex items-center justify-center shrink-0 shadow-2xs">
+              <div className="w-8 h-8 rounded-xl bg-linear-to-tr from-primary-container to-primary text-on-primary font-bold text-xs flex items-center justify-center shrink-0 shadow-2xs">
                 {userInitial}
               </div>
 

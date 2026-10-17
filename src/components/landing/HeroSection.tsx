@@ -1,7 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Button } from '../ui/Button'
-import { Icon } from '../ui/Icon'
 import { TelemetryHUD } from './TelemetryHUD'
 
 interface HeroSectionProps {
@@ -26,7 +24,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo, id }) => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: 'easeOut' as const },
     },
   }
 
@@ -34,15 +32,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo, id }) => {
     <section id={id} className="relative w-full overflow-hidden bg-surface pt-28 sm:pt-32 pb-16 lg:pb-24 border-b border-outline-variant/30">
       {/* Ambient Clinical Lighting Glows */}
       <div
-        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[850px] h-[450px] bg-primary/5 rounded-full blur-3xl"
+        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-212.5 h-112.5 bg-primary/5 rounded-full blur-3xl"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute top-48 right-[-10%] w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-3xl"
+        className="pointer-events-none absolute top-48 right-[-10%] w-125 h-125 bg-secondary-container/20 rounded-full blur-3xl"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute top-72 left-[-8%] w-[420px] h-[420px] bg-tertiary-fixed-dim/20 rounded-full blur-3xl"
+        className="pointer-events-none absolute top-72 left-[-8%] w-105 h-105 bg-tertiary-fixed-dim/20 rounded-full blur-3xl"
         aria-hidden="true"
       />
 

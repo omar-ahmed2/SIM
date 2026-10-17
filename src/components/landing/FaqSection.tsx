@@ -71,7 +71,7 @@ export const FaqSection: React.FC = () => {
                   aria-expanded={isOpen}
                   aria-controls={answerId}
                   onClick={() => toggleItem(index)}
-                  className="w-full p-5 sm:p-6 flex items-center justify-between text-left gap-4 hover:bg-surface-container-low transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[56px]"
+                  className="w-full p-5 sm:p-6 flex items-center justify-between text-left gap-4 hover:bg-surface-container-low transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-14"
                 >
                   <span className="font-display font-semibold text-base sm:text-lg text-on-surface">
                     {faq.question}

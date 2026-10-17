@@ -9,7 +9,7 @@ interface TelemetryHUDProps {
 export const TelemetryHUD: React.FC<TelemetryHUDProps> = ({ onOpenDemo }) => {
   return (
     <div className="relative w-full max-w-5xl mx-auto rounded-3xl overflow-hidden bg-surface-container-lowest shadow-2xl p-2 sm:p-3 border border-outline-variant/40">
-      <div className="relative rounded-2xl overflow-hidden aspect-[16/9] w-full bg-surface-dim">
+      <div className="relative rounded-2xl overflow-hidden aspect-video w-full bg-surface-dim">
         {/* Real-world high-resolution clinical incubator preview */}
         <img
           src="src/assets/images/incubator-hero.png"
@@ -33,7 +33,7 @@ export const TelemetryHUD: React.FC<TelemetryHUDProps> = ({ onOpenDemo }) => {
         )}
 
         {/* Top HUD Overlay Bar */}
-        <div className="absolute top-0 left-0 right-0 p-3 sm:p-4 flex flex-wrap items-center justify-between gap-2 bg-gradient-to-b from-inverse-surface/85 via-inverse-surface/40 to-transparent text-inverse-on-surface">
+        <div className="absolute top-0 left-0 right-0 p-3 sm:p-4 flex flex-wrap items-center justify-between gap-2 bg-linear-to-b from-inverse-surface/85 via-inverse-surface/40 to-transparent text-inverse-on-surface">
           <div className="flex items-center gap-2.5">
             <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-inverse-surface/80 backdrop-blur-md border border-white/10">
               <span className="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-ping" />
@@ -59,7 +59,7 @@ export const TelemetryHUD: React.FC<TelemetryHUDProps> = ({ onOpenDemo }) => {
         </div>
 
         {/* Bottom Floating Telemetry Pods with gentle hover lift */}
-        <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/60 to-transparent">
+        <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5 bg-linear-to-t from-inverse-surface/90 via-inverse-surface/60 to-transparent">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
             {/* Metric 1: Heart Rate */}
             <motion.div
